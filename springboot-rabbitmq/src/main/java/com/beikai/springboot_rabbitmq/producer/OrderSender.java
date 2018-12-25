@@ -35,7 +35,7 @@ public class OrderSender {
          */
         CorrelationData correlationData = new CorrelationData();
         correlationData.setId(order.getMessageId());
-        rabbitTemplate.convertAndSend("order-exchang",
+        rabbitTemplate.convertAndSend("order-change",
                 "order.abcd",order,correlationData);
     }
 }

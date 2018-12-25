@@ -1,4 +1,4 @@
-package com.beikai.springboot_rabbitmq_consumer;
+package com.beikai.springboot_rabbitmq;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
