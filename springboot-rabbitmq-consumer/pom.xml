@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.beikai</groupId>
-    <artifactId>springboot-rabbitmq</artifactId>
+    <artifactId>springboot-rabbitmq-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-rabbitmq</name>
+    <name>springboot-rabbitmq-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
