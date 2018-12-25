@@ -1,8 +1,7 @@
-package com.beikai.springboot_rabbitmq;
+package com.beikai.springboot_rabbitmq.test;
 
 import com.beikai.springboot_rabbitmq.entity.OrderModel;
 import com.beikai.springboot_rabbitmq.producer.OrderSender;
-import com.beikai.springboot_rabbitmq.test.OrderSendTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -13,13 +12,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.UUID;
 
+/**
+ * @ClassName OrderSendTest
+ * @Description TODO
+ * @Author Admin
+ * @Date 2018/12/25 21:49
+ * @Version 1.0
+ *  这是 测试 是否发送成功的 类
+ **/
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringbootRabbitmqApplicationTests {
-
-    @Test
-    public void contextLoads() {
-    }
+public class OrderSendTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderSendTest.class);
 
     @Autowired
@@ -40,6 +43,4 @@ public class SpringbootRabbitmqApplicationTests {
         }
     }
 
-
 }
-
