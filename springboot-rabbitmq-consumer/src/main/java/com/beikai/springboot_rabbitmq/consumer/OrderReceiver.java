@@ -34,8 +34,8 @@ public class OrderReceiver {
      *
      */
     @RabbitListener(bindings = @QueueBinding(
-        value = @Queue(value = "order-queue",durable = "true"),
-            exchange = @Exchange(name = "order-change",type = "topic"),
+        value = @Queue(value = "order-queue-one",durable = "true"),
+            exchange = @Exchange(name = "order-change-one",type = "topic"),
             key = "order.*"
     )  )
 
@@ -74,4 +74,49 @@ public class OrderReceiver {
           */
         channel.basicAck(deliveryTag,false);
     }
+
+    /**
+     * 设置 exchange 与 queue 属性 以及绑定
+     *
+     * # 设置 queue 名称
+     * spring.rabbitmq.listener.order.queue.name=order-queue
+     * # 是否持久化
+     * spring.rabbitmq.listener.order.queue.durable=true
+     * # 设置 exchange 名称
+     * spring.rabbitmq.listener.order.exchange.name=order-change
+     * # 是否持久化
+     * spring.rabbitmq.listener.order.exchange.durable=true
+     * # 设置 exchange 类型
+     * spring.rabbitmq.listener.order.exchange.type=topic
+     * # 是否设置监听功能
+     * spring.rabbitmq.listener.order.exchange.ignoreDeclarationExceptions=true
+     * # 设置 路由 key
+     * spring.rabbitmq.listener.order.exchange.key=order.*
+     */
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(value = "${spring.rabbitmq.listener.order.queue.name}",
+            durable = "${spring.rabbitmq.listener.order.queue.durable}"),
+            exchange = @Exchange(value = "${spring.rabbitmq.listener.order.exchange.name}",
+                    durable = "${spring.rabbitmq.listener.order.exchange.durable}",
+            type = "${spring.rabbitmq.listener.order.exchange.type}",
+            ignoreDeclarationExceptions = "${spring.rabbitmq.listener.order.exchange.ignoreDeclarationExceptions}"),
+            key = "${spring.rabbitmq.listener.order.exchange.key}"
+    ))
+
+    /**
+     * 设置 执行消息队列的方法
+     */
+    public void onOrderMessage(@Payload OrderModel orderModel,
+                        Channel channel,
+                               @Headers Map<String , Object> headers) throws Exception{
+        System.out.println("-----------------------消费端消费开始----------------------");
+        System.out.println("消费的order: " + orderModel.getId());
+
+        // 从头文件中获取传回去的唯一值
+        Long o = (Long) headers.get(AmqpHeaders.DELIVERY_TAG);
+
+        // 手动 ack
+        channel.basicAck(o,false);
+    }
+
 }

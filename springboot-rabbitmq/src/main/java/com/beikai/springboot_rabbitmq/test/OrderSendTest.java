@@ -2,6 +2,7 @@ package com.beikai.springboot_rabbitmq.test;
 
 import com.beikai.springboot_rabbitmq.entity.OrderModel;
 import com.beikai.springboot_rabbitmq.producer.OrderSender;
+import com.beikai.springboot_rabbitmq.service.OrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -28,6 +29,9 @@ public class OrderSendTest {
     @Autowired
     private OrderSender orderSender;
 
+    @Autowired
+    private OrderService orderService;
+
     @Test
     public void sendTest() throws Exception {
         OrderModel orderModel = new OrderModel();
@@ -43,4 +47,14 @@ public class OrderSendTest {
         }
     }
 
+    @Test
+    public void RabbitmqSendTest() throws Exception {
+        OrderModel orderModel = new OrderModel();
+        orderModel.setId("2018122500001");
+        orderModel.setName("测试发送数据");
+        orderModel.setMessageId(System.currentTimeMillis()+"$"+ UUID.randomUUID().toString());
+
+        orderService.createOrder(orderModel);
+
+    }
 }
