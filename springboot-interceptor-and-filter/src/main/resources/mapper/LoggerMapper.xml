@@ -2,4 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.beikai.springbootinterceptorandfilter.mapper.LoggerMapper" >
 
+    <insert id="addLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.LoggerModel">
+
+    </insert>
+
+    <insert id="addRequestLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel">
+      INSERT into request_logger(requestIp,requestTime,requestMethod,requestParams,methodDescription)
+      VALUES(#{requestIp},now(),#{requestMethod},#{requestParams},#{methodDescription});
+    </insert>
+    <select id="getLog" resultType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel"
+            parameterType="com.beikai.springbootinterceptorandfilter.model.LoggerModel">
+      select a.id,a.requestIp,DATE_FORMAT(a.requestTime,'%Y-%m-%d %h:%m:%s') requestTime,
+      a.requestMethod,a.requestParams,a.methodDescription from request_logger a where 1 = 1
+      <if test="name != null and name != ''">
+          and a.requestParams like concat(concat('%',#{name},'%'))
+      </if>
+    </select>
+
 </mapper>
