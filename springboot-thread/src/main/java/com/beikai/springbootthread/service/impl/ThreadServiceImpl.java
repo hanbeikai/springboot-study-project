@@ -107,14 +107,21 @@ public class ThreadServiceImpl implements IThreadService {
         FutureTask<JSON> getUserNmeCallable = new FutureTask<>(getUserName);
         FutureTask<JSON> getUserAgeCallable = new FutureTask<>(getUserAge);
 
+        /**
+         * futureTaks 特征 特点
+         *  1 . 泛型定义
+         *  2. 构造函数 要有一个callable
+         *  3. futuretask 应该实现了runnable 实现了run方法
+         *  4. 有一个get方法可以返回callable的执行结果 此方法还具有阻塞的效果
+          */
+
         // 3 . 封装线程中
         new Thread(getUserNmeCallable).start();
         new Thread(getUserAgeCallable).start();
 
         // 4 . 获取线程中的数据  合并成一个数据
         JSONObject json = new JSONObject();
-
-
+        // 5 . 在合并的时候 如果有task 任务没有被线程执行完毕 此处会有等待的效果
         json.putAll((Map<? extends String, ? extends Object>) getUserNmeCallable.get());
         json.putAll((Map<? extends String, ? extends Object>) getUserAgeCallable.get());
 
