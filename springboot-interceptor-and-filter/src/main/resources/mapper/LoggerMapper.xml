@@ -3,13 +3,23 @@
 <mapper namespace="com.beikai.springbootinterceptorandfilter.mapper.LoggerMapper" >
 
     <insert id="addRequestLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel">
-      INSERT into request_logger(requestIp,requestTime,requestMethod,requestParams,methodDescription)
-      VALUES(#{requestIp},now(),#{requestMethod},#{requestParams},#{methodDescription});
+      INSERT into request_logger(requestIp, requestMethod, requestParams, requestMessage, methodDescription,
+       requestTime, responseTime, responseCode, responseParams, responseMessage)
+      VALUES(#{requestIp},#{requestMethod},#{requestParams},#{requestMessage},
+      #{methodDescription},str_TO_DATE(#{requestTime},'%Y-%m-%d %H:%i:%S'),
+      str_TO_DATE(#{responseTime},'%Y-%m-%d %H:%i:%S'),#{responseCode},#{responseParams},#{responseMessage});
     </insert>
+
+    <insert id="addLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.LoggerModel">
+
+    </insert>
+
     <select id="getLog" resultType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel"
             parameterType="com.beikai.springbootinterceptorandfilter.model.LoggerModel">
       select a.id,a.requestIp,DATE_FORMAT(a.requestTime,'%Y-%m-%d %h:%m:%s') requestTime,
-      a.requestMethod,a.requestParams,a.methodDescription from request_logger a where 1 = 1
+      a.requestMethod,a.requestParams,a.methodDescription,
+        DATE_FORMAT(a.responseTime,'%Y-%m-%d %h:%m:%s') responseTime, a.responseCode, a.responseParams, a.responseMessage
+      from request_logger a where 1 = 1
       <if test="name != null and name != ''">
           and a.requestParams like concat(concat('%',#{name}),'%')
       </if>

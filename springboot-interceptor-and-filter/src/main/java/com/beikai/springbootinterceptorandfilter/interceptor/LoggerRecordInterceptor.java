@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel;
 import com.beikai.springbootinterceptorandfilter.service.LoggerServicer;
+import com.beikai.springbootinterceptorandfilter.util.DateUtils;
+import com.beikai.springbootinterceptorandfilter.util.IPUtils;
 import com.beikai.springbootinterceptorandfilter.wrapper.MyHttpServletRequestWrapper;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -18,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
+import java.util.Date;
 
 /**
  * @ClassName LoggerRecordInterceptor
@@ -58,11 +61,6 @@ public class LoggerRecordInterceptor implements HandlerInterceptor {
         //获取方法上的access注解
         ApiOperation annotation = method.getAnnotation(ApiOperation.class);
 
-        if(null == annotation) {
-            // 如果注解的值为空 说明不需要进行拦截, 直接放过
-            return true;
-        }
-
         if (null != annotation){
             // 不为空 获取里面的值
             String value = annotation.value();
@@ -73,10 +71,9 @@ public class LoggerRecordInterceptor implements HandlerInterceptor {
             // 设置相应 编码格式
             response.setHeader("Content-type","application/json;charset-UTF-8");
 
-            String requestURL = request.getRequestURL().toString();
             String requestURI = request.getRequestURI();
 
-            requestLoggerModel.setRequestIp(requestURL);
+            requestLoggerModel.setRequestIp(IPUtils.getIpAddress(request));
             requestLoggerModel.setRequestMethod(requestURI);
 
             String dataForm = "";
@@ -85,18 +82,26 @@ public class LoggerRecordInterceptor implements HandlerInterceptor {
 
             requestLoggerModel.setRequestParams(dataForm);
 
-            try {
+            requestLoggerModel.setRequestTime(DateUtils.dateFormat(new Date(),DateUtils.HOUR_PATTERN));
+
+            requestLoggerModel.setRequestMessage("请求成功");
+
+            /*try {
                 loggerServicer.addRequestLogger(requestLoggerModel);
             } catch (Exception e) {
-                logger.error("添加请求日志信息出错");
-                e.printStackTrace();
-            }
+                logger.error("添加请求日志信息出错 ---> " + e);
+                requestLoggerModel.setRequestMessage("添加请求日志信息出错 ---> " + e);
+                return true;
+            }*/
 
         } catch (Exception e) {
-            logger.error("获取请求内容出错");
-            e.printStackTrace();
+            logger.error("获取请求内容出错 ---> " + e);
+            requestLoggerModel.setRequestMessage("获取请求内容出错 ---> " + e);
+            request.setAttribute("LoggerRecordInterceptor_model",requestLoggerModel);
+            return true;
         }
 
+        request.setAttribute("LoggerRecordInterceptor_model",requestLoggerModel);
         return true;
     }
 
