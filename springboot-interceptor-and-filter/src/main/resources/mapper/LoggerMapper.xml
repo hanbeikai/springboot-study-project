@@ -3,6 +3,9 @@
 <mapper namespace="com.beikai.springbootinterceptorandfilter.mapper.LoggerMapper" >
 
     <insert id="addRequestLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel">
+        <selectKey resultType="Int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
       INSERT into request_logger(requestIp, requestMethod, requestParams, requestMessage, methodDescription,
        requestTime, responseTime, responseCode, responseParams, responseMessage)
       VALUES(#{requestIp},#{requestMethod},#{requestParams},#{requestMessage},
@@ -13,6 +16,17 @@
     <insert id="addLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.LoggerModel">
 
     </insert>
+
+    <update id="updateRequestLogger" parameterType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel">
+        update request_logger
+        <trim prefix="set" suffixOverrides=",">
+            <if test="responseCode != null and responseCode != ''" >responseCode=#{responseCode},</if>
+            <if test="responseParams != null and responseParams != ''" >responseParams=#{responseParams},</if>
+            <if test="responseMessage != null and responseMessage != ''" >responseMessage=#{responseMessage},</if>
+            <if test="responseTime != null and responseTime != ''" >responseTime=str_TO_DATE(#{responseTime},'%Y-%m-%d %H:%i:%S'),</if>
+        </trim>
+        where id = #{id}
+    </update>
 
     <select id="getLog" resultType="com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel"
             parameterType="com.beikai.springbootinterceptorandfilter.model.LoggerModel">

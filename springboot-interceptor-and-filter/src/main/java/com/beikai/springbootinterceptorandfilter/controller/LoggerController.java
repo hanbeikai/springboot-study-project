@@ -1,5 +1,6 @@
 package com.beikai.springbootinterceptorandfilter.controller;
 
+import com.beikai.springbootinterceptorandfilter.exception.MyException;
 import com.beikai.springbootinterceptorandfilter.model.APIResponseModel;
 import com.beikai.springbootinterceptorandfilter.model.LoggerModel;
 import com.beikai.springbootinterceptorandfilter.model.MyResponseHandle;
@@ -35,7 +36,7 @@ public class LoggerController {
 
         List<RequestLoggerModel> requestLoggerModel = loggerServicer.getLog(loggerModel);
 
-        return MyResponseHandle.getResponseWithData(MyResponseHandle.SUCCESS,requestLoggerModel);
+        return MyResponseHandle.getResponseWithData(MyException.SUCCESS,requestLoggerModel);
     }
 
 }

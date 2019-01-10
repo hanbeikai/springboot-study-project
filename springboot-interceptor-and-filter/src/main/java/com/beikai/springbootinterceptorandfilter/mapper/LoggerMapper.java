@@ -12,4 +12,6 @@ public interface LoggerMapper {
     public void addRequestLogger(RequestLoggerModel loggerModel);
 
     public List<RequestLoggerModel> getLog(LoggerModel loggerModel);
+
+    public void updateRequestLogger(RequestLoggerModel requestLoggerModel);
 }

@@ -14,13 +14,13 @@ public class APIResponseModel<T> {
       */
     private String code;
     /**
+     * 返回的数据
+     */
+    private T data;
+    /**
      * 返回信息
       */
     private String message;
-    /**
-     * 返回的数据
-      */
-    private T data;
 
     public String getCode() {
         return code;

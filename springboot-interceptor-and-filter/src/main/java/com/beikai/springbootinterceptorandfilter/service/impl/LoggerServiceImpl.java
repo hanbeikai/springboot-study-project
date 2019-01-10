@@ -37,4 +37,9 @@ public class LoggerServiceImpl implements LoggerServicer {
     public List<RequestLoggerModel> getLog(LoggerModel loggerModel) {
         return loggerMapper.getLog(loggerModel);
     }
+
+    @Override
+    public void updateRequestLogger(RequestLoggerModel requestLoggerModel) {
+        loggerMapper.updateRequestLogger(requestLoggerModel);
+    }
 }

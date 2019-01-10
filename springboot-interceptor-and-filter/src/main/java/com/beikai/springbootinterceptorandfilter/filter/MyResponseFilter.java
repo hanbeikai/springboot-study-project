@@ -8,9 +8,7 @@ import com.beikai.springbootinterceptorandfilter.util.DateUtils;
 import com.beikai.springbootinterceptorandfilter.wrapper.MyHttpServletResponseWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -78,10 +76,10 @@ public class MyResponseFilter implements Filter {
         try {
 
             //解决service为null无法注入问题
-            if (null == loggerMapper) {
+            /*if (null == loggerMapper) {
                 BeanFactory factory = WebApplicationContextUtils.getRequiredWebApplicationContext(request.getServletContext());
                 loggerMapper = (LoggerMapper) factory.getBean("loggerMapper");
-            }
+            }*/
 
             loggerMapper.addRequestLogger(requestLoggerModel);
         } catch (Exception e) {
