@@ -35,6 +35,13 @@ import java.util.Date;
  * @Aspect 定义当前类是一个 aspect 类
  * @Component 定义当前类到spring容器中
  * @Order(1) 定义当前类的启动级别
+ *
+ *  相对于拦截器 方式获取日志, aspect 方式获取日志更加简单,使用的代码更少,而且可以记录各个方法之间的调用, 比如所记录了 controller 层 , service 层 ,dao 层等,
+ *      但是有个缺点是,如果方法没有到controller ,service,dao 等时,是不能触发切面记录的
+ *
+ *  使用拦截器的话,可以成请求层面上进行拦截,就算请求还没有触发controller ,比如说, 请求参数进行了校验设置,在加载请求参数的时候,就已经进行了异常处理,这时候也可以
+ *      通过拦截器进行拦截,并保存,使用拦截器的缺点就是,在配置的时候,要在config中添加 设置的拦截器加载,为了方式请求参数被拦截器读取一次后无法被业务代码读取,
+ *      需要重写 wrapper等,然后重写一个过滤器,并配置到config中,方便与在spring容器加载的时候添加过滤器
  **/
 @Aspect
 @Component
@@ -114,8 +121,8 @@ public class MyLoggerAspect {
     /**
      * 在方法执行完结后打印返回内容
      */
-    @AfterReturning(returning = "o", pointcut = "controllerAspect()")
-    public void methodAfterReturing(Object o) {
+    @AfterReturning(returning = "o", pointcut = "controllerAspect()&&annotationAspect()&&@annotation(annotation)")
+    public void methodAfterReturing(Object o,ApiOperation annotation) {
 
         // 从线程中获取 之前保存的对象 用来绑定响应参数
         RequestLoggerModel requestLoggerModel = REQUESTLOGGERMODELTHREADLOCAL.get();
@@ -152,8 +159,8 @@ public class MyLoggerAspect {
      *
      * @param e
      */
-    @AfterThrowing(throwing = "e", pointcut = "controllerAspect()")
-    public void methodAfterReturingThrowe(Throwable e) {
+    @AfterThrowing(throwing = "e", pointcut = "controllerAspect()&&annotationAspect()&&@annotation(annotation)")
+    public void methodAfterReturingThrowe(Throwable e,ApiOperation annotation) {
         // 从线程中获取 之前保存的对象 用来绑定响应参数
         RequestLoggerModel requestLoggerModel = REQUESTLOGGERMODELTHREADLOCAL.get();
 
