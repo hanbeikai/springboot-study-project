@@ -5,6 +5,7 @@ import com.beikai.springbootinterceptorandfilter.model.APIResponseModel;
 import com.beikai.springbootinterceptorandfilter.model.LoggerModel;
 import com.beikai.springbootinterceptorandfilter.model.MyResponseHandle;
 import com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel;
+import com.beikai.springbootinterceptorandfilter.rabbitmq.producer.MessageProducter;
 import com.beikai.springbootinterceptorandfilter.service.LoggerServicer;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,6 +30,9 @@ import java.util.List;
 public class LoggerController {
     @Autowired
     private LoggerServicer loggerServicer;
+
+    @Autowired
+    private MessageProducter messageProducter;
 
     @RequestMapping(value = "/getLog",method = RequestMethod.POST)
     @ApiOperation("获取日志信息 : getLog")

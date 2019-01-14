@@ -97,12 +97,12 @@ public class LoggerRecordInterceptor implements HandlerInterceptor {
         } catch (Exception e) {
             logger.error("获取请求内容出错 ---> " + e);
             requestLoggerModel.setRequestMessage("获取请求内容出错 ---> " + e);
+        }finally {
+            loggerServicer.addRequestLogger(requestLoggerModel);
             request.setAttribute("LoggerRecordInterceptor_model",requestLoggerModel);
             return true;
-        }
 
-        request.setAttribute("LoggerRecordInterceptor_model",requestLoggerModel);
-        return true;
+        }
     }
 
     /**

@@ -1,5 +1,7 @@
 package com.beikai.springbootinterceptorandfilter.model;
 
+import java.io.Serializable;
+
 /**
  * @ClassName RequestLoggerModel
  * @Description TODO
@@ -7,8 +9,9 @@ package com.beikai.springbootinterceptorandfilter.model;
  * @Date 2019/1/5 20:18
  * @Version 1.0
  **/
-public class RequestLoggerModel {
+public class RequestLoggerModel implements Serializable {
 
+    private static final long serialVersionUID = -1696084176156750453L;
     /**
      * 主键
      */

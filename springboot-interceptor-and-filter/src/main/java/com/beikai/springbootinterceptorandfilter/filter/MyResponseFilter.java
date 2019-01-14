@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.beikai.springbootinterceptorandfilter.mapper.LoggerMapper;
 import com.beikai.springbootinterceptorandfilter.model.RequestLoggerModel;
+import com.beikai.springbootinterceptorandfilter.rabbitmq.producer.MessageProducter;
 import com.beikai.springbootinterceptorandfilter.util.DateUtils;
 import com.beikai.springbootinterceptorandfilter.wrapper.MyHttpServletResponseWrapper;
 import org.slf4j.Logger;
@@ -37,6 +38,9 @@ public class MyResponseFilter implements Filter {
 
     @Autowired
     private LoggerMapper loggerMapper;
+
+    @Autowired
+    private MessageProducter messageProducter;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -81,10 +85,12 @@ public class MyResponseFilter implements Filter {
                 loggerMapper = (LoggerMapper) factory.getBean("loggerMapper");
             }*/
 
-            loggerMapper.addRequestLogger(requestLoggerModel);
+            // loggerMapper.addRequestLogger(requestLoggerModel);
+
+            messageProducter.send(MessageProducter.EXCHANGEKEY,MessageProducter.ROUNTINGKEY,requestLoggerModel);
+
         } catch (Exception e) {
             logger.error("添加请求参数信息出错 , 错误原因是 : " + e);
-            e.printStackTrace();
         }
 
     }

@@ -27,7 +27,7 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 注册 LoggerRecordInterceptor 系统操作日志拦截器(凡是加了自定义注解的方法都会添加用户操作日志) , 拦截所有请求
-        //registry.addInterceptor(loggerRecordInterceptor).addPathPatterns("/log/**"); // 拦截器里有 @autowire或者 @resource 注入的属性就这么用
+        registry.addInterceptor(loggerRecordInterceptor).addPathPatterns("/log/**"); // 拦截器里有 @autowire或者 @resource 注入的属性就这么用
         // 注册 LoggerRecordInterceptor 系统请求拦截器(不拦截登录 注销 回调请求 其他都拦截)
         /*registry.addInterceptor(new LoggerRecordInterceptor()).addPathPatterns("/**");
         // 连接器里没有@autowire或者@resource注入的属性就这么用

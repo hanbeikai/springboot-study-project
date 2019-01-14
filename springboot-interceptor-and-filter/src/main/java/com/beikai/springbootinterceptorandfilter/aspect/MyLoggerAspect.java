@@ -11,12 +11,13 @@ import com.beikai.springbootinterceptorandfilter.wrapper.MyHttpServletRequestWra
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -43,9 +44,9 @@ import java.util.Date;
  *      通过拦截器进行拦截,并保存,使用拦截器的缺点就是,在配置的时候,要在config中添加 设置的拦截器加载,为了方式请求参数被拦截器读取一次后无法被业务代码读取,
  *      需要重写 wrapper等,然后重写一个过滤器,并配置到config中,方便与在spring容器加载的时候添加过滤器
  **/
-@Aspect
+/*@Aspect
 @Component
-@Order(1)
+@Order(1)*/
 public class MyLoggerAspect {
 
     private static Logger logger = LoggerFactory.getLogger(MyLoggerAspect.class);
