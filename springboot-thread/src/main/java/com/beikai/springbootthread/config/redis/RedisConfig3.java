@@ -22,6 +22,8 @@ import java.util.Set;
  * @Date 2019/1/20 23:43
  * @Version 1.0
  *
+ * https://blog.csdn.net/plei_yue/article/details/79362372
+ *
  *  redis 哨兵模式 配置文件
  **/
 /*@Configuration
@@ -67,7 +69,7 @@ public class RedisConfig3 {
     private String host2;
     @Value("${redis.sentinel.port2}")
     private Integer port2;
-    
+
 
     /**
      * JedisPoolConfig 连接池
