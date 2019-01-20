@@ -2,10 +2,13 @@ package com.beikai.springbootthread.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.beikai.springbootthread.mapper.UserDao;
 import com.beikai.springbootthread.model.User;
 import com.beikai.springbootthread.service.IThreadService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -20,6 +23,9 @@ import java.util.concurrent.FutureTask;
  **/
 @Service
 public class ThreadServiceImpl implements IThreadService {
+
+    @Autowired
+    private UserDao userDao;
 
     /**
      * 使用runnable 的方式 获取用户信息
@@ -130,5 +136,17 @@ public class ThreadServiceImpl implements IThreadService {
                 + "   获取的内容是 : ---> " + json.toJSONString());
 
         return json;
+    }
+
+    /**
+     * 获取用户信息
+     * @return
+     */
+    @Override
+    public List<User> getUser() {
+
+        List<User> users = userDao.getUser();
+
+        return users;
     }
 }

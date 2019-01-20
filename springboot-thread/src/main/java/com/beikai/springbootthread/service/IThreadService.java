@@ -1,5 +1,8 @@
 package com.beikai.springbootthread.service;
 
+import com.beikai.springbootthread.model.User;
+
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -10,4 +13,7 @@ public interface IThreadService {
     public Object getUserInfoByRunnable();
 
     public Object getUserInfoByCallable() throws ExecutionException, InterruptedException;
+
+    public List<User> getUser();
+
 }
