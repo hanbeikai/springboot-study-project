@@ -7,7 +7,6 @@ package com.beikai.springbootsortint.test;
  * @Date 2019/2/12 23:15
  * @Version 1.0
  **/
-@con
 public class TestInteger {
     public static final int ENDNUMBER = Integer.MAX_VALUE - 1;
     public static final int STARTNUMBER = ENDNUMBER - 2;

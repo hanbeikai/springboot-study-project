@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.beikai.dubbo.dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.beikai.dubbo.entity.User">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="reg_time" jdbcType="VARCHAR" property="regTime" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete from user
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="com.beikai.dubbo.entity.User">
+        insert into user (id, email, nick_name,
+        password, reg_time, user_name
+        )
+        values (#{id,jdbcType=BIGINT}, #{email,jdbcType=VARCHAR}, #{nickName,jdbcType=VARCHAR},
+        #{password,jdbcType=VARCHAR}, #{regTime,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}
+        )
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="com.beikai.dubbo.entity.User">
+        update user
+        set email = #{email,jdbcType=VARCHAR},
+        nick_name = #{nickName,jdbcType=VARCHAR},
+        password = #{password,jdbcType=VARCHAR},
+        reg_time = #{regTime,jdbcType=VARCHAR},
+        user_name = #{userName,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select id, email, nick_name, password, reg_time, user_name
+        from user
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id, email, nick_name, password, reg_time, user_name
+        from user
+    </select>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--提供方应用信息, 用于计算依赖关系-->
+    <dubbo:application name="${dubbo.application.name}"/>
+    <!--注册中心暴露服务地址-->
+    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address1}"/>
+<!--
+    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address1},${dubbo.registry.address2},${dubbo.registry.address3}"/>
+-->
+    <!--暴露服务-->
+    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}"/>
+    <!-- 配置参数 loadBalance=random  用来设定负载均衡策略  random 义为 随机的  其他策略参考 :   http://dubbo.apache.org/zh-cn/docs/user/demos/loadbalance.html-->
+    <dubbo:service interface="com.beikai.dubbo.service.UserService" ref="userServiceImpl" retries="0"
+                   timeout="6000" loadbalance="random"/>
+</beans>
