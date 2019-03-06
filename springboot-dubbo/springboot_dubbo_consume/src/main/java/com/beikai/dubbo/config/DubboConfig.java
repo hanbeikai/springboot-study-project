@@ -1,4 +1,4 @@
-package com.beikai.dubbo;
+package com.beikai.dubbo.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;

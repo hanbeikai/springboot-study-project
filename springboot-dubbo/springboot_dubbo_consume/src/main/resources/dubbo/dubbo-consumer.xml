@@ -13,9 +13,13 @@
 
     <!--注册中心暴露服务地址-->
     <!--<dubbo:registry address="multicast://224.5.6.7.1234"/>-->
+    <!-- 单个zk -->
+    <!--<dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address1}"/>-->
+
+    <!-- 多个zk -->
     <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address1},${dubbo.registry.address2},${dubbo.registry.address3}"/>
 
     <!--接口-->
-    <dubbo:reference interface="com.beikai.dubbo.service.UserService" id="userService" retries="0" timeout="6000"/>
+    <dubbo:reference check="false" interface="com.beikai.dubbo.service.UserService" id="userService" retries="0" timeout="6000"/>
 
 </beans>

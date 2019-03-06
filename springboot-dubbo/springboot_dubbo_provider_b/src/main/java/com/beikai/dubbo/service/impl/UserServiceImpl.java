@@ -1,5 +1,6 @@
 package com.beikai.dubbo.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.beikai.dubbo.dao.UserDao;
 import com.beikai.dubbo.entity.User;
@@ -8,7 +9,6 @@ import com.google.common.collect.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
@@ -45,18 +45,21 @@ public class UserServiceImpl implements UserService{
 
         logger.info("{} {} {}",providerSide,remoteHost,s);
 
+        User user = userDao.selectByPrimaryKey(id);
 
-        return userDao.selectByPrimaryKey(id);
+        return user;
     }
 
     @Override
     public List<User> selectAll() {
-        return userDao.selectAll();
+        List<User> list = userDao.selectAll();
+        return list;
     }
 
     @Override
     public int updateByPrimaryKey(User record) {
-        return userDao.updateByPrimaryKey(record);
+        int i = userDao.updateByPrimaryKey(record);
+        return i;
     }
 
     /**
@@ -69,6 +72,7 @@ public class UserServiceImpl implements UserService{
         result.put("attachment",true);
         String count = RpcContext.getContext().getAttachment("count");
         result.put("count",count);
+        // 区分 a 和 b的参数
         result.put("more","providerB");
         return result;
     }

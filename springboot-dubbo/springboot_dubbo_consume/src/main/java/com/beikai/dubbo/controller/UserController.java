@@ -2,12 +2,14 @@ package com.beikai.dubbo.controller;
 
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.dubbo.rpc.service.EchoService;
+import com.beikai.dubbo.entity.User;
 import com.beikai.dubbo.service.UserService;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,10 +27,12 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/getuser",method = RequestMethod.POST)
-    public Map<String, Object> user(@RequestParam String id) {
+    public Map<String, Object> user(@RequestBody String id) {
         Map<String, Object> result = new HashMap<>();
         try {
-            result.put("user", userService.selectByPrimaryKey(Long.parseLong(id)));
+            long l = Long.parseLong(id);
+            User user = userService.selectByPrimaryKey(l);
+            result.put("user",user);
             result.put("type", "200");
             result.put("content", "success");
         } catch (Exception e) {
@@ -43,7 +47,8 @@ public class UserController {
     public Map<String, Object> allUsers() {
         Map<String, Object> result = new HashMap<>();
         try {
-            result.put("users", userService.selectAll());
+            List<User> list = userService.selectAll();
+            result.put("users", list);
             result.put("type", "200");
             result.put("content", "success");
         } catch (Exception e) {
