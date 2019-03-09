@@ -44,21 +44,6 @@ public class Test2 {
     }
 
     @Test
-    public void test4(){
-        Class<Outter> outterClass = null;
-
-        try {
-            outterClass = (Class<Outter>) Class.forName("com.beikai.springbootsortint.test.Outter");
-            System.out.println(outterClass.getName());
-            System.out.println(outterClass.getClass());
-
-            System.out.println(Outter.class);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
     public void test5(){
         ConcurrentHashMap<String,String> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put("test","test");
