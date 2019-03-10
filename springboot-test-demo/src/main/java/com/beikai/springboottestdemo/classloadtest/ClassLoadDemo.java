@@ -16,6 +16,7 @@ import org.junit.Test;
  *      加载了代码块
  *      加载了构造方法
  *      调用了静态方法
+ *      张三
  **/
 public class ClassLoadDemo {
 
