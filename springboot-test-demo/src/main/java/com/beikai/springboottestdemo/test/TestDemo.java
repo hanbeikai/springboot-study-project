@@ -11,7 +11,7 @@ import org.junit.Test;
  * @Date 2019/3/9 18:32
  * @Version 1.0
  *
- *  测试类
+ *  测试单例模式
  **/
 public class TestDemo {
 

@@ -6,6 +6,7 @@ package com.beikai.springboottestdemo.test;
  * @Author Admin
  * @Date 2019/2/12 23:15
  * @Version 1.0
+ *  测试类型转换
  **/
 public class TestInteger {
     public static final int ENDNUMBER = Integer.MAX_VALUE - 1;
