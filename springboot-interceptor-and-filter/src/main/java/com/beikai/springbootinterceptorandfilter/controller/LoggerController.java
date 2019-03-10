@@ -23,6 +23,9 @@ import java.util.List;
  * @Author Admin
  * @Date 2019/1/3 23:04
  * @Version 1.0
+ *
+ * swagger 本地测试接口 : http://127.0.0.1:8081/swagger-ui.html#/
+ *
  **/
 @RestController
 @RequestMapping("/log")

@@ -73,7 +73,11 @@ public class MessageCustomer {
         Long id = (Long) header.get(AmqpHeaders.DELIVERY_TAG);
 
         try {
-            loggerMapper.updateRequestLogger(object);
+            if (object.getId() > 0){
+                loggerMapper.updateRequestLogger(object);
+            }else {
+                loggerMapper.addRequestLogger(object);
+            }
         } catch (Exception e) {
             logger.error("添加请求参数信息出错 , 错误原因是 : " + e);
         }

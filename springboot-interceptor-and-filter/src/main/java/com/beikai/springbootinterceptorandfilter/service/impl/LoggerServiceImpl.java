@@ -35,6 +35,8 @@ public class LoggerServiceImpl implements LoggerServicer {
 
     @Override
     public List<RequestLoggerModel> getLog(LoggerModel loggerModel) {
+
+        System.out.println("得到了结果...");
         return loggerMapper.getLog(loggerModel);
     }
 

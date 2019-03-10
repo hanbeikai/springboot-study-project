@@ -57,11 +57,16 @@ public class MyResponseFilter implements Filter {
         filterChain.doFilter(request, wrapper);
 
         RequestLoggerModel requestLoggerModel = (RequestLoggerModel) httpServletRequest.getAttribute("LoggerRecordInterceptor_model");
+
+        if (null == requestLoggerModel){
+            requestLoggerModel = new RequestLoggerModel();
+            requestLoggerModel.setResponseParams("请求方法输入错误,没有触发请求....");
+        }
         try {
 
             // 获取response返回的内容并重新写入response
             String result = wrapper.getResponseData(response.getCharacterEncoding());
-            if (null != result && !(result.contains("<!DOCTYPE html>"))){
+            if (null != result && !"".equals(result) && !(result.contains("<!DOCTYPE html>"))){
                 response.getOutputStream().write(result.getBytes());
                 requestLoggerModel.setResponseParams(result);
                 JSONObject jsonObject = JSON.parseObject(result);
