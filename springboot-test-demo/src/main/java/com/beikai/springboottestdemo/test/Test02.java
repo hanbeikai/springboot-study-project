@@ -6,13 +6,13 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @ClassName Test2
+ * @ClassName Test02
  * @Description TODO
  * @Author Admin
  * @Date 2019/2/13 21:41
  * @Version 1.0
  **/
-public class Test2 {
+public class Test02 {
     @Test
     public void test1(){
         String s = "123";

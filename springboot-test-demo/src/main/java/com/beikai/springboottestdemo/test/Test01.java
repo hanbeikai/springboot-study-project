@@ -1,13 +1,13 @@
 package com.beikai.springboottestdemo.test;
 
 /**
- * @ClassName Test
+ * @ClassName Test01
  * @Description TODO
  * @Author Admin
  * @Date 2019/2/12 23:33
  * @Version 1.0
  **/
-public class Test {
+public class Test01 {
     public static void main(String[] args) {
         System.out.println(findResult());
     }
