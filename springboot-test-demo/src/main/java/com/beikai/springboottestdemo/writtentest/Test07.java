@@ -1,4 +1,4 @@
-package com.beikai.springboottestdemo.test;
+package com.beikai.springboottestdemo.writtentest;
 
 import java.util.ArrayList;
 import java.util.List;
