@@ -1,8 +1,7 @@
-package com.beikai.springboottestdemo.test;
+package com.beikai.springboottestdemo.threadlocktest;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @ClassName Test08
@@ -19,32 +18,28 @@ public class Test08 {
      */
     volatile int id = 0;
 
-    /**
-     * 线程安全
-      */
-    AtomicInteger atomicInteger = new AtomicInteger(0);
-
-    public void add2(){
-        atomicInteger.incrementAndGet();// 自带的自增方法
-    }
-
     public void add(){
         id++;
     }
 
+    /**
+     * 测试方法
+     * @param args
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws InterruptedException {
         Test08 test08 = new Test08();
 
         List<Integer> integers = new ArrayList<>();
 
         for (int i = 0; i < 2; i++) {
+
             new Thread(() ->{
                 for (int j = 0; j < 10000; j++) {
-                    test08.add2();
-
-                    System.out.println("当前线程是 : " + Thread.currentThread().getName()+"-"+test08.atomicInteger);
-                    if (test08.atomicInteger.get() == 10000){
-                        integers.add(test08.atomicInteger.get());
+                    test08.add();
+                    System.out.println("当前线程是 : " + Thread.currentThread().getName()+"-"+test08.id);
+                    if (test08.id == 10000){
+                        integers.add(test08.id);
                         System.out.println("--------------------------------------------------");
                     }
                     
@@ -53,7 +48,7 @@ public class Test08 {
             
         }
         Thread.sleep(1000L);
-        System.out.println("结果是 : " + test08.atomicInteger.get());
+        System.out.println("结果是 : " + test08.id);
 
         System.out.println(integers.get(0));
     }
