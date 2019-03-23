@@ -1,5 +1,6 @@
 package com.beikai.springboottestdemo.test;
 
+import com.beikai.service.CommonService;
 import org.junit.Test;
 
 import java.util.*;
@@ -108,5 +109,11 @@ public class Test02 {
         Map map = Collections.synchronizedMap(hashMap);
 
 
+    }
+
+    @Test
+    public void test8(){
+        CommonService commonService = new CommonService();
+        commonService.doService();
     }
 }
