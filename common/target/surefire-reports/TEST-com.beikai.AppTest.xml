@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.beikai.AppTest" time="0.024" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace04\springboot-study-project\common\target\test-classes;D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace04\springboot-study-project\common\target\classes;D:\Windows10\DevelopmentTools\Maven\Storehouse3\repository\junit\junit\4.11\junit-4.11.jar;D:\Windows10\DevelopmentTools\Maven\Storehouse3\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire5417542713187318799\surefirebooter3489713694397427825.jar C:\Users\Admin\AppData\Local\Temp\surefire5417542713187318799 2019-03-21T07-45-38_124-jvmRun1 surefire4143047462069671949tmp surefire_06998196784420099120tmp"/>
+    <property name="surefire.test.class.path" value="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace04\springboot-study-project\common\target\test-classes;D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace04\springboot-study-project\common\target\classes;D:\Windows10\DevelopmentTools\Maven\Storehouse3\repository\junit\junit\4.11\junit-4.11.jar;D:\Windows10\DevelopmentTools\Maven\Storehouse3\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre"/>
+    <property name="basedir" value="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace04\springboot-study-project\common"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire5417542713187318799\surefirebooter3489713694397427825.jar"/>
+    <property name="sun.boot.class.path" value="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\resources.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\rt.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\sunrsasign.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\jsse.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\jce.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\charsets.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\jfr.jar;D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Windows10\DevelopmentTools\Maven\Storehouse3\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2018.2.5"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="user.dir" value="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace04\springboot-study-project\common"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;D:\Windows10\DevelopmentTools\Java\Java_7u80_Windows64\JDK\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Windows10\DevelopmentTools\Maven\Maven\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;D:\Windows10\DevelopmentTools\SVN_VersionAboutControler\Client\bin;D:\Windows10\DevelopmentTools\Git_VersionAboutControler\Git_Client\bin;D:\Windows10\DevelopmentTools\SVN_VersionAboutControler\Server\bin;D:\Windows10\DevelopmentTools\VSCode\Node\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Windows10\DevelopmentTools\Git_VersionAboutControler\Git_Server\Git\cmd;D:\Windows10\DevelopmentTools\Server\RabbitMQ\Erlong\erl9.2\bin;D:\Windows10\DevelopmentTools\Server\RabbitMQ\RabbitMQServer\rabbitmq_server-3.7.9\sbin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Windows10\DevelopmentTools\Maven\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;D:\Windows10\DevelopmentTools\Maven\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Admin\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.ext.dirs" value="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="com.beikai.AppTest" time="0.001"/>
+</testsuite>
