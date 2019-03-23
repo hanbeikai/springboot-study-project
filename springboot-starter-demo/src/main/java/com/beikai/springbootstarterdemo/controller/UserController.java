@@ -1,5 +1,6 @@
 package com.beikai.springbootstarterdemo.controller;
 
+import com.beikai.service.CommonService;
 import com.beikai.springbootstarterdemo.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,9 +21,20 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
+    @Autowired
+    private CommonService commonService;
+
     @RequestMapping(value = "/getUser",method = RequestMethod.GET)
     public Object getUser(@RequestParam String id){
 
         return this.userService.get(id);
+    }
+
+    @RequestMapping(value = "/getService",method = RequestMethod.GET)
+    public Object getService(){
+
+        commonService.doService();
+
+        return commonService;
     }
 }
