@@ -49,11 +49,11 @@ public class RedisConfig {
     private boolean testWhileIdle;
 
 
-    @Value("${spring.redis.cluster.nodes}")
+/*    @Value("${spring.redis.cluster.nodes}")
     private String clusterNodes;
 
     @Value("${spring.redis.cluster.max-redirects}")
-    private Integer mmaxRedirectsac;
+    private Integer mmaxRedirectsac;*/
 
     @Value("${redis.hostName}")
     private String hostName;
