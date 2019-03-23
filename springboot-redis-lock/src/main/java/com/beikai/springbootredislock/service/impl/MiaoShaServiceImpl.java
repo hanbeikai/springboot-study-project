@@ -72,7 +72,6 @@ public class MiaoShaServiceImpl implements MiaoShaService {
                 stringRedisTemplate.opsForValue().set(goodsCode,count+"");
                 //redisUtil.set(goodsCode,count);
 
-
             }
 
 

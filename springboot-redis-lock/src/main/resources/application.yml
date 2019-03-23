@@ -1,18 +1,18 @@
 spring:
-  # \u6570\u636E\u5E93\u53C2\u6570\u914D\u7F6E
+  # 数据库参数
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  # redis \u53C2\u6570\u914D\u7F6E
+  # redis 服务器地址
   redis:
     host: 127.0.0.1
     port: 6379
-  # \u9759\u6001\u8D44\u6E90\u53C2\u6570\u914D\u7F6E
+  # mvc 静态资源路径
   mvc:
     static-path-pattern: /resources/**
 
-  # \u8BBE\u7F6E\u6620\u5C04\u6587\u4EF6\u8DEF\u5F84
+  # mybatis mapper xml 映射文件路径
 mybatis:
   mapper-locations: classpath:mapper/*.xml
