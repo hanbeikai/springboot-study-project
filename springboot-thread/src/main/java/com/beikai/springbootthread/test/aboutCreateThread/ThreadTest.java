@@ -1,4 +1,4 @@
-package com.beikai.springbootthread.test;
+package com.beikai.springbootthread.test.aboutCreateThread;
 
 import com.alibaba.fastjson.JSON;
 import com.beikai.springbootthread.service.CreateIdService;
