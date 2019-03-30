@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.beikai</groupId>
+    <artifactId>springmvc-shrio</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>shiro-test</module>
+        <module>shiro-web</module>
+        <module>shiro-web2</module>
+        <module>shrio-web3</module>
+        <module>shrio-webdb</module>
+        <module>shiro-web-db-ann</module>
+        <module>shiro-web-db-filter</module>
+        <module>shiro-web-db-session</module>
+        <module>shiro-web-db-cache</module>
+        <module>shiro-web-db-rememberMe</module>
+        <module>SpringMVC-Test</module>
+    </modules>
+
+
+</project>

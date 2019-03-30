@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--为spring创建一个shirofilter对象-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!--拦截器配置拦截条件-->
+        <!--1. 设置 securitymanager环境-->
+        <property name="securityManager" ref="securityManager"/>
+        <!-- <property name="securityManager" ref="securityManager"/>-->
+        <!--2. 设置登录页面-->
+        <property name="loginUrl" value="login.html"/>
+        <!--3. 设置未认证跳转的地址-->
+        <property name="unauthorizedUrl" value="403.html"/>
+        <!--4. 设置过滤链-->
+        <property name="filterChainDefinitions">
+            <!-- / 后面的等号后 anon 是不需要认证的   /* 后面的是需要认证的-->
+            <value>
+                /login.html = anon
+                /subLogin = anon
+                /** = authc
+            </value>
+        </property>
+    </bean>
+    <!--构建securitymanager对象-->
+    <bean class="org.apache.shiro.web.mgt.DefaultWebSecurityManager" id="securityManager">
+        <!--把realm设置到securitymanager环境中-->
+        <property name="realm" ref="realm"/>
+    </bean>
+    <!--构建realm对象-->
+    <bean class="com.beikai.shiro.realm.CustomRealm" id="realm">
+        <!--添加加密算法-->
+        <property name="credentialsMatcher" ref="credentialsMatcher"/>
+    </bean>
+    <!--构建加密算法-->
+    <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher" id="credentialsMatcher">
+        <!--设置加密的类型-->
+        <property name="hashAlgorithmName" value="md5"/>
+        <!--设置加密次数-->
+        <property name="hashIterations" value="1"/>
+    </bean>
+</beans>

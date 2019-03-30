@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpringMVC-Test:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="196c69e5-a7e3-48f8-aaef-d4588905578c" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-test/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web2/target/" />
+    <ignored path="$PROJECT_DIR$/shrio-web3/target/" />
+    <ignored path="$PROJECT_DIR$/shrio-webdb/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web-db-ann/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web-db-filter/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web-db-session/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web-db-cache/target/" />
+    <ignored path="$PROJECT_DIR$/shiro-web-db-rememberMe/target/" />
+    <ignored path="$PROJECT_DIR$/SpringMVC-Test/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ShiroTest" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ShiroTest" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ShiroTest" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="shirotest: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ShiroTest" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="shirotest: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-603507375">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="5" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="10" />
+          <entry key="dummy" value="18" />
+          <entry key="html" value="48" />
+          <entry key="java" value="6124" />
+          <entry key="jsp" value="96" />
+          <entry key="sql" value="86" />
+          <entry key="txt" value="51" />
+          <entry key="xml" value="1720" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="48" />
+          <entry key="JAVA" value="6124" />
+          <entry key="JSP" value="96" />
+          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="SQL" value="14" />
+          <entry key="Scratch" value="82" />
+          <entry key="XML" value="1720" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="AbstractSessionDAO" value="2" />
+          <entry key="AccessControlFilter" value="1" />
+          <entry key="AuthenticatingFilter" value="1" />
+          <entry key="AuthenticationTest" value="1" />
+          <entry key="AuthorizationAttributeSourceAdvisor" value="1" />
+          <entry key="DefaultWebSessionManager" value="1" />
+          <entry key="RedisSessionDao" value="3" />
+          <entry key="RolesOrFilterForAuthorization" value="1" />
+          <entry key="class" value="78" />
+          <entry key="core" value="1" />
+          <entry key="html" value="18" />
+          <entry key="ini" value="1" />
+          <entry key="java" value="191" />
+          <entry key="jsp" value="4" />
+          <entry key="roles_permissions" value="1" />
+          <entry key="sql" value="7" />
+          <entry key="user_roles" value="4" />
+          <entry key="users" value="5" />
+          <entry key="web" value="1" />
+          <entry key="xml" value="104" />
+          <entry key="xsl" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="78" />
+          <entry key="Database Element" value="10" />
+          <entry key="HTML" value="18" />
+          <entry key="JAVA" value="191" />
+          <entry key="JSP" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="SQL" value="2" />
+          <entry key="Scratch" value="5" />
+          <entry key="UML" value="13" />
+          <entry key="XML" value="105" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="53" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="web.xml" />
+        <option value="spring" />
+        <option value="HTML File" />
+        <option value="XSLT Stylesheet" />
+        <option value="spring-beans.schema" />
+        <option value="web" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>session</find>
+      <find>retri</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/java/com/beikai/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/java/com/beikai/utils/JedisUtils.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/resources/spring/spring.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/java/beikai/vo/User.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/java/com/beikai/vo/User.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/resources/spring/spring.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/java/com/beikai/cache/MyCacheManager.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/java/com/beikai/shiro/realm/CustomRealm.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/java/com/beikai/session/RedisSessionDao.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-cache/src/main/java/com/beikai/cache/MyCache.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/java/beikai/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/java/com/beikai/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/resources/spring/spring.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/java/com/beikai/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/java/com/beikai/vo/User.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-rememberMe/src/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/shiro-test/src/test/java/com/beikai/shiro/realm/test/AuthenticationTest.java" />
+        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/beikai/shiro/realm/CustomRealm.java" />
+        <option value="$PROJECT_DIR$/shiro-test/src/main/java/com/beikai/shrio/realm/CustomRealm.java" />
+        <option value="$PROJECT_DIR$/shiro-web/src/main/resources/spring/spring.xml" />
+        <option value="$PROJECT_DIR$/shrio-webdb/src/main/java/com/beikai/vo/User.java" />
+        <option value="$PROJECT_DIR$/shrio-webdb/src/main/java/com/beikai/shiro/realm/CustomRealm.java" />
+        <option value="$PROJECT_DIR$/shrio-webdb/src/main/java/com/beikai/dao/UserDao.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8bf04bef-90c8-4211-b71f-3ae987a38a36/console_2.sql" />
+        <option value="$PROJECT_DIR$/shrio-webdb/src/main/java/com/beikai/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-ann/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-ann/src/main/java/com/beikai/shiro/realm/CustomRealm.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-ann/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-filter/src/main/java/com/beikai/filter/RolesOrFilterForAuthorization.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-filter/src/main/resources/spring/spring.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/resources/spring/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/java/com/beikai/session/CustomSessionManager.java" />
+        <option value="$PROJECT_DIR$/shiro-web-db-session/src/main/java/com/beikai/session/RedisSessionDao.java" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/java/beikai/vo/User.java" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/upload.jsp" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/sss.jsp" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/service/FileUploadService.java" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/service/impl/FileUploadServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/doupload.jsp" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/up.jsp" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/controller/FileUploadController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven/Maven/apache-maven-3.3.9-bin/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\Windows10\DevelopmentTools\Maven\Maven\apache-maven-3.3.9-bin\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
+    <option name="y" value="5" />
+    <option name="width" value="1859" />
+    <option name="height" value="1463" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beikai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beikai" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc-shrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-shrio" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="E:/space" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15498519" />
+    <property name="project.structure.side.proportion" value="0.40998837" />
+    <property name="settings.editor.selected.configurable" value="settings.gitosc" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\shiro-web\src\main\webapp" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\shiro-web\src\main\webapp\WEB-INF" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\shiro-web\src\main\webapp\page" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\shiro-web\src\main\resources\spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="realm" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\SpringMVC-Test\src\main\webapp" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\SpringMVC-Test\src\main\java" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\SpringMVC-Test\src\main\resources" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\shiro-web-db-rememberMe\src\main\webapp" />
+      <recent name="D:\Windows10\DevelopmentTools\IntelliJ_IDEA\WorkSpace\springmvc-shrio\shiro-web-db-rememberMe\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.SpringMVC-Test-Start">
+    <configuration name="CustomRealm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beikai.shiro.realm.CustomRealm" />
+      <module name="shrio-webdb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beikai.shiro.realm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationTest.testAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beikai.shiro.realm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beikai.shiro.realm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beikai.shiro.realm.test.AuthenticationTest" />
+      <option name="METHOD_NAME" value="testAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomRealmTest.testAutentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beikai.shiro.realm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beikai.shiro.realm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beikai.shiro.realm.test.CustomRealmTest" />
+      <option name="METHOD_NAME" value="testAutentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IniRealmTest.testAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beikai.shiro.realm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beikai.shiro.realm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beikai.shiro.realm.test.IniRealmTest" />
+      <option name="METHOD_NAME" value="testAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcRealmTest.testAutentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shiro-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beikai.shiro.realm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beikai.shiro.realm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beikai.shiro.realm.test.JdbcRealmTest" />
+      <option name="METHOD_NAME" value="testAutentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringMVC-Test-Start" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="SpringMVC-Test:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_8" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="11840" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="11841" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SpringMVC-Test:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shiro-web-db-ann-start" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shiro-web-db-ann:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_3" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8727" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="8728" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shiro-web-db-ann:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shiro-web-db-cache-start" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shiro-web-db-cache:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_6" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8742" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="8743" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shiro-web-db-cache:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shiro-web-db-filter-start" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shiro-web-db-filter:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_4" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4660" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="4661" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shiro-web-db-filter:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shiro-web-db-rememberMe" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shiro-web-db-rememberMe:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_7" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9863" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="9864" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shiro-web-db-rememberMe:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shiro-web-db-start" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shrio-webdb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="7040" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="7041" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shrio-webdb:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shiro-web" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="D:\Windows10\DevelopmentTools\Java\Java_8u161_Windows64\JDK\jre">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shiro-web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="1986" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="1987" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shiro-web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shrio-web-db-session-start" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shiro-web-db-session:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvc-shrio_5" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="7185" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="7186" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shiro-web-db-session:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.shiro-web-db-start" />
+      <item itemvalue="Tomcat Server.SpringMVC-Test-Start" />
+      <item itemvalue="Tomcat Server.shiro-web-db-ann-start" />
+      <item itemvalue="Tomcat Server.shiro-web-db-filter-start" />
+      <item itemvalue="Tomcat Server.shrio-web-db-session-start" />
+      <item itemvalue="Tomcat Server.shiro-web" />
+      <item itemvalue="Tomcat Server.shiro-web-db-cache-start" />
+      <item itemvalue="Tomcat Server.shiro-web-db-rememberMe" />
+      <item itemvalue="Application.CustomRealm" />
+      <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
+      <item itemvalue="JUnit.CustomRealmTest.testAutentication" />
+      <item itemvalue="JUnit.IniRealmTest.testAuthentication" />
+      <item itemvalue="JUnit.JdbcRealmTest.testAutentication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomRealmTest.testAutentication" />
+        <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
+        <item itemvalue="Application.CustomRealm" />
+        <item itemvalue="JUnit.JdbcRealmTest.testAutentication" />
+        <item itemvalue="JUnit.IniRealmTest.testAuthentication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="196c69e5-a7e3-48f8-aaef-d4588905578c" name="Default" comment="" />
+      <created>1541323695409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541323695409</updated>
+      <workItem from="1541323698298" duration="15065000" />
+      <workItem from="1541339645916" duration="4530000" />
+      <workItem from="1541427481488" duration="104000" />
+      <workItem from="1541433225685" duration="1836000" />
+      <workItem from="1541435238493" duration="157000" />
+      <workItem from="1541514992184" duration="246000" />
+      <workItem from="1541515263044" duration="5605000" />
+      <workItem from="1541546782138" duration="1567000" />
+      <workItem from="1541598112583" duration="8312000" />
+      <workItem from="1541690732769" duration="3845000" />
+      <workItem from="1541694631922" duration="1134000" />
+      <workItem from="1541773056826" duration="11325000" />
+      <workItem from="1541849202189" duration="12264000" />
+      <workItem from="1541864648899" duration="59000" />
+      <workItem from="1541864737760" duration="2258000" />
+      <workItem from="1541928238891" duration="346000" />
+      <workItem from="1541928614817" duration="10276000" />
+      <workItem from="1542033126492" duration="3406000" />
+      <workItem from="1542121981053" duration="4403000" />
+      <workItem from="1542466419131" duration="115000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AuthenticationTest_testAuthentication - 2018.11.04 at 17h 39m 33s.xml">
+      <configuration name="AuthenticationTest.testAuthentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IniRealmTest_testAuthentication - 2018.11.04 at 17h 39m 42s.xml">
+      <configuration name="IniRealmTest.testAuthentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcRealmTest_testAutentication - 2018.11.04 at 17h 39m 53s.xml">
+      <configuration name="JdbcRealmTest.testAutentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationTest_testAuthentication - 2018.11.10 at 20h 30m 35s.xml">
+      <configuration name="AuthenticationTest.testAuthentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationTest_testAuthentication - 2018.11.10 at 20h 31m 11s.xml">
+      <configuration name="AuthenticationTest.testAuthentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationTest_testAuthentication - 2018.11.10 at 21h 58m 20s.xml">
+      <configuration name="AuthenticationTest.testAuthentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomRealmTest_testAutentication - 2018.11.11 at 19h 55m 38s.xml">
+      <configuration name="CustomRealmTest.testAutentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomRealmTest_testAutentication - 2018.11.11 at 19h 56m 24s.xml">
+      <configuration name="CustomRealmTest.testAutentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomRealmTest_testAutentication - 2018.11.11 at 20h 29m 25s.xml">
+      <configuration name="CustomRealmTest.testAutentication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomRealmTest_testAutentication - 2018.11.11 at 20h 36m 35s.xml">
+      <configuration name="CustomRealmTest.testAutentication" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="86853000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="4" width="1487" height="1170" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="JRebel" order="1" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Learn" order="5" weight="0.32952815" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.39888033" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="9" />
+      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32998997" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.30339321" side_tool="true" weight="0.32270917" />
+      <window_info anchor="bottom" id="Spring" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49550897" weight="0.25099602" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="JRebel Console" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="9" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" weight="0.32968128" />
+      <window_info anchor="bottom" id="Message" order="11" />
+      <window_info anchor="bottom" id="Find" order="12" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.6966068" weight="0.32270917" />
+      <window_info anchor="bottom" id="Debug" order="14" weight="0.26819542" />
+      <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="16" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" sideWeight="0.499501" weight="0.32968128" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.32984033" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" weight="0.16966067" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" visible="true" weight="0.247505" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="JRebel" order="1" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Learn" order="5" weight="0.32952815" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2553018" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="9" />
+      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32998997" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.3028942" side_tool="true" weight="0.32968128" />
+      <window_info anchor="bottom" id="Spring" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info active="true" anchor="bottom" id="Messages" order="4" sideWeight="0.49550897" visible="true" weight="0.25298804" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="JRebel Console" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="9" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" />
+      <window_info anchor="bottom" id="Message" order="11" />
+      <window_info anchor="bottom" id="Find" order="12" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.69710577" weight="0.32370517" />
+      <window_info anchor="bottom" id="Debug" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="16" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" sideWeight="0.499501" weight="0.32968128" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.32984033" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" weight="0.16013072" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-test/src/test/java/com/beikai/shiro/realm/test/AuthenticationTest.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/doupload.jsp</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/eis/MemorySessionDAO.class</url>
+          <line>40</line>
+          <properties class="org.apache.shiro.session.mgt.eis.MemorySessionDAO" method="doReadSession">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/controller/FileUploadController.java</url>
+          <line>30</line>
+          <properties class="com.beikai.controller.FileUploadController" method="upload">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="uml://SPRING/mappedClass=org.apache.shiro.session.mgt.eis.AbstractSessionDAO">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SPRING</ID>
+          <OriginalElement>mappedClass=org.apache.shiro.session.mgt.eis.AbstractSessionDAO</OriginalElement>
+          <nodes>
+            <node x="" y="">module=shiro-web-db-filter;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=com.beikai.filter.RolesOrFilterForAuthorization;bean_name=rolesOrFilterForAuthorization</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">&lt;unknown&gt;</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=954</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web-db-filter;tag=aop:config;offset=1097</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=1005</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.apache.shiro.spring.LifecycleBeanPostProcessor;tag=bean;offset=1166</node>
+            <node x="" y="">module=shiro-web-db-filter;bean_class=org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;tag=bean;offset=1260</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=954</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web-db-ann;tag=aop:config;offset=1098</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=1005</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.apache.shiro.spring.LifecycleBeanPostProcessor;tag=bean;offset=1167</node>
+            <node x="" y="">module=shiro-web-db-ann;bean_class=org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;tag=bean;offset=1261</node>
+            <node x="" y="">module=shiro-web;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=803</node>
+            <node x="" y="">module=shiro-web;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=854</node>
+            <node x="" y="">module=shiro-web;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.session.CustomSessionManager;bean_name=sessionManager</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.session.RedisSessionDao;bean_name=redisSessionDao</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.utils.JedisUtils;bean_name=jedisUtils</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.cache.MyCacheManager;bean_name=cacheManager</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.cache.MyCache;bean_name=myCache</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.filter.RolesOrFilterForAuthorization;bean_name=rolesOrFilterForAuthorization</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=redis.clients.jedis.JedisPool;bean_name=jedisPool</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=redis.clients.jedis.JedisPoolConfig;bean_name=jedisPoolConfig</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=954</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web-db-cache;tag=aop:config;offset=1097</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=1005</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.apache.shiro.spring.LifecycleBeanPostProcessor;tag=bean;offset=1166</node>
+            <node x="" y="">module=shiro-web-db-cache;bean_class=org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;tag=bean;offset=1260</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.session.CustomSessionManager;bean_name=sessionManager</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.session.RedisSessionDao;bean_name=redisSessionDao</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.cache.MyCacheManager;bean_name=cacheManager</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.web.mgt.CookieRememberMeManager;bean_name=cookieRememberMeManager</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.web.servlet.SimpleCookie;bean_name=simpleCookie</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.filter.RolesOrFilterForAuthorization;bean_name=rolesOrFilterForAuthorization</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=redis.clients.jedis.JedisPool;bean_name=jedisPool</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=redis.clients.jedis.JedisPoolConfig;bean_name=jedisPoolConfig</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.cache.MyCache;bean_name=myCache</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.utils.JedisUtils;bean_name=jedisUtils</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=954</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;tag=aop:config;offset=1097</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=1005</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.spring.LifecycleBeanPostProcessor;tag=bean;offset=1166</node>
+            <node x="" y="">module=shiro-web-db-rememberMe;bean_class=org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;tag=bean;offset=1260</node>
+            <node x="" y="">module=shrio-webdb;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shrio-webdb;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shrio-webdb;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shrio-webdb;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shrio-webdb;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shrio-webdb;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shrio-webdb;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shrio-webdb;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shrio-webdb;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shrio-webdb;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=803</node>
+            <node x="" y="">module=shrio-webdb;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shrio-webdb;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=854</node>
+            <node x="" y="">module=shiro-web-db-session;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.session.CustomSessionManager;bean_name=sessionManager</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.session.RedisSessionDao;bean_name=redisSessionDao</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.filter.RolesOrFilterForAuthorization;bean_name=rolesOrFilterForAuthorization</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=redis.clients.jedis.JedisPool;bean_name=jedisPool</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=redis.clients.jedis.JedisPoolConfig;bean_name=jedisPoolConfig</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.utils.JedisUtils;bean_name=jedisUtils</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=954</node>
+            <node x="" y="">module=shiro-web-db-session;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web-db-session;tag=aop:config;offset=1097</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=1005</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.spring.LifecycleBeanPostProcessor;tag=bean;offset=1166</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;tag=bean;offset=1260</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.3871763255240444" x="857.0" y="801.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Local context</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JIGSAW/shiro.core">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JIGSAW</ID>
+          <OriginalElement>shiro.core</OriginalElement>
+          <nodes>
+            <node x="" y="">shiro.core</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="45.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.apache.shiro.session.mgt.eis.AbstractSessionDAO">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.apache.shiro.session.mgt.eis.AbstractSessionDAO</OriginalElement>
+          <nodes>
+            <node x="" y="">org.apache.shiro.session.mgt.eis.AbstractSessionDAO</node>
+            <node x="" y="">org.apache.shiro.session.mgt.eis.SessionDAO</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="84.0" y="55.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-db-session/src/main/java/com/beikai/session/RedisSessionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://SPRING/mappedClass=com.beikai.session.RedisSessionDao">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SPRING</ID>
+          <OriginalElement>mappedClass=com.beikai.session.RedisSessionDao</OriginalElement>
+          <nodes>
+            <node x="" y="">module=shiro-web-db-session;bean_name=(com.beikai) [Component]</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.utils.JedisUtils;bean_name=jedisUtils</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=redis.clients.jedis.JedisPool;bean_name=jedisPool</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.jdbc.core.JdbcTemplate;bean_name=jdbcTemplate</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.controller.UserController;bean_name=userController</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.spring.web.ShiroFilterFactoryBean;bean_name=shiroFilter</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.web.mgt.DefaultWebSecurityManager;bean_name=securityManager</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.shiro.realm.CustomRealm;bean_name=realm</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.authc.credential.HashedCredentialsMatcher;bean_name=credentialsMatcher</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.session.CustomSessionManager;bean_name=sessionManager</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.session.RedisSessionDao;bean_name=redisSessionDao</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.beikai.filter.RolesOrFilterForAuthorization;bean_name=rolesOrFilterForAuthorization</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=redis.clients.jedis.JedisPoolConfig;bean_name=jedisPoolConfig</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=com.alibaba.druid.pool.DruidDataSource;bean_name=dataSource</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.core.env.Environment;bean_name=environment</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.core.env.PropertyResolver;bean_name=propertyResolver</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.core.convert.ConversionService;bean_name=conversionService</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.web.context.WebApplicationContext;bean_name=webApplicationContext</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=javax.servlet.ServletConfig;bean_name=servletConfig</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=javax.servlet.ServletContext;bean_name=servletContext</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=javax.servlet.http.HttpServletRequest;bean_name=httpServletRequest</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=javax.servlet.http.HttpSession;bean_name=httpSession</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=954</node>
+            <node x="" y="">module=shiro-web-db-session;bean_name=(com.beikai.controller) [Component]</node>
+            <node x="" y="">module=shiro-web-db-session;tag=aop:config;offset=1097</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=1005</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.spring.LifecycleBeanPostProcessor;tag=bean;offset=1166</node>
+            <node x="" y="">module=shiro-web-db-session;bean_class=org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;tag=bean;offset=1260</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="467.0" y="253.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Local context</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/eis/SessionDAO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/eis/CachingSessionDAO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/eis/EnterpriseCacheSessionDAO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/eis/MemorySessionDAO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-db-session/src/main/resources/spring/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-db-session/src/main/java/com/beikai/session/CustomSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/DefaultSessionManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/mgt/eis/AbstractSessionDAO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-db-session/src/main/resources/spring/spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-db-filter/src/main/java/com/beikai/filter/RolesOrFilterForAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-db-rememberMe/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="81" column="21" selection-start-line="17" selection-start-column="8" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/resources/spring/spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/cache/MyCache.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/shiro/realm/CustomRealm.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/utils/JedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/session/CustomSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/cache/MyCacheManager.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/filter/RolesOrFilterForAuthentication.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/vo/User.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/filter/RolesOrFilterForAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/sss.jsp" />
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/service/impl/FileUploadServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/service/FileUploadService.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../Java/Java_8u161_Windows64/JDK/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/doupload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/up.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/session/RedisSessionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC-Test/src/main/java/com/beikai/controller/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="465" selection-start-line="465" selection-end-line="465" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="410" selection-start-line="410" selection-end-line="410" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/SubjectCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="53" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>shiro-web:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.48216105" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.48216105" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.48216105" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SpringMVC-Test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.40998837" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: commons-logging:commons-logging:1.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.48216105" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

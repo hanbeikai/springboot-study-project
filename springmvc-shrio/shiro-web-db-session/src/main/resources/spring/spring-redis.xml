@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--创建redispool的bean 通过构造器的形式创建-->
+    <bean class="redis.clients.jedis.JedisPool" id="jedisPool">
+        <!--设置连接池对象-->
+        <constructor-arg ref="jedisPoolConfig"/>
+        <!--设置redis的host-->
+        <constructor-arg value="127.0.0.1"/>
+        <!--设置redis端口号-->
+        <constructor-arg value="6379"/>
+    </bean>
+
+    <!--创建jedispoolconfig对象-->
+    <bean class="redis.clients.jedis.JedisPoolConfig" id="jedisPoolConfig"/>
+</beans>

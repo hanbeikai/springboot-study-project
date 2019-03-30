@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--引入新创建的配置文件-->
+    <import resource="spring-dao.xml"/>
+    <import resource="spring-redis.xml"/>
+
+    <!--添加扫描路径-->
+    <context:component-scan base-package="com.beikai" />
+
+    <!--为spring创建一个shirofilter对象-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!--拦截器配置拦截条件-->
+        <!--1. 设置 securitymanager环境-->
+        <property name="securityManager" ref="securityManager"/>
+        <!-- <property name="securityManager" ref="securityManager"/>-->
+        <!--2. 设置登录页面-->
+        <property name="loginUrl" value="login.html"/>
+        <!--3. 设置未认证跳转的地址-->
+        <property name="unauthorizedUrl" value="403.html"/>
+        <!--4. 设置过滤链-->
+        <property name="filterChainDefinitions">
+            <!-- /后面的是不需要认证的   /* 后面的是需要认证的-->
+            <value>
+                /login.html = anon
+                /subLogin = anon
+                /testrole = roles["admin","admin1"]
+                /testrole1 = rolesorfilter["admin","admin1"]
+                /testpermission = perms["user:delete"]
+                /testpermission1 = perms["user:delete","user:update"]
+                /* = authc
+            </value>
+        </property>
+        <!--添加自已定义的过滤器-->
+        <property name="filters">
+            <map>
+                <entry key="rolesorfilter" value-ref="rolesOrFilterForAuthorization"/>
+            </map>
+        </property>
+    </bean>
+    <!--构建自定义过滤器的对象-->
+    <bean class="com.beikai.filter.RolesOrFilterForAuthorization" id="rolesOrFilterForAuthorization"/>
+
+    <!--构建securitymanager对象-->
+    <bean class="org.apache.shiro.web.mgt.DefaultWebSecurityManager" id="securityManager">
+        <!--把realm设置到securitymanager环境中-->
+        <property name="realm" ref="realm"/>
+        <!--把sessionmanager添加到权限管理中-->
+        <property name="sessionManager" ref="sessionManager"/>
+    </bean>
+
+    <!--构建realm对象-->
+    <bean class="com.beikai.shiro.realm.CustomRealm" id="realm">
+        <!--添加加密算法-->
+        <property name="credentialsMatcher" ref="credentialsMatcher"/>
+    </bean>
+
+    <!--构建加密算法-->
+    <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher" id="credentialsMatcher">
+        <!--设置加密的类型-->
+        <property name="hashAlgorithmName" value="md5"/>
+        <!--设置加密次数-->
+        <property name="hashIterations" value="1"/>
+    </bean>
+
+    <!--添加sessionmanager对象-->
+    <!--<bean class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager" id="sessionManager">
+       &lt;!&ndash;注入自定义的sessiondao&ndash;&gt;
+        <property name="sessionDAO" ref="redisSessionDao"/>
+     </bean>-->
+
+    <!--使用自定义的sessionmanager对象-->
+    <bean class="com.beikai.session.CustomSessionManager" id="sessionManager">
+        <property name="sessionDAO" ref="redisSessionDao" />
+    </bean>
+
+    <!--添加自定义的sessiondao对象-->
+    <bean class="com.beikai.session.RedisSessionDao" id="redisSessionDao" />
+</beans>
