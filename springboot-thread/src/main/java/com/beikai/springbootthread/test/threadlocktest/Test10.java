@@ -53,7 +53,9 @@ public class Test10 {
         do {
             // 获取内存中当前的值
             current = unsafe.getIntVolatile(this, l);
-            // 进行 cas 操作
+            // 进行 cas 操作 第一个参数是 当前对象, 第二个参数是 当前值的偏移量, 第三个参数是当前的值, 第四个参数是 要修改的值
+            // 当执行上一个操作获取当前值后,调用cas 方法通过通过参数中的当前值与内存中的值是否相同,如果相同,把第四个参数存到内存中,
+            // 并返回false,如果不相同,不把第四个参数存在内存中,并且返回false
         }while (!unsafe.compareAndSwapInt(this, l, current, current + 1));
     }
 
