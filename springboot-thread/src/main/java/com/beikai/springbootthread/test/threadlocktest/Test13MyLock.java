@@ -84,9 +84,6 @@ public class Test13MyLock implements Lock {
         return false;
     }
 
-
-
-
     @Override
     public Condition newCondition() {
         return null;

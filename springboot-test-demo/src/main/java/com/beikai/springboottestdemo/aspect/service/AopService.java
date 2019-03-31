@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class AopService {
-
     public void query(){
         System.out.println("spring ---- init --- ");
     }
