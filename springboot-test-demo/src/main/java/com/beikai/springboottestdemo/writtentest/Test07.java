@@ -16,11 +16,11 @@ import java.util.List;
 public class Test07 {
 
     public static void main(String[] args) {
-        int[] arr = {1,0,0,0,0,0,1,0,1};
+        int[] arr = {1, 0,0,0, 1, 0, 1};
         solution2(arr);
     }
 
-    public static int solution(int[] arr){
+    public static int solution(int[] arr) {
 
         int result = 0;
 
@@ -29,9 +29,9 @@ public class Test07 {
             int before = 0;
             int after = 0;
 
-            if (i < arr.length - 1){
+            if (i < arr.length - 1) {
                 for (int j = i + 1; j < arr.length; j++) {
-                    if (arr[j] == 1){
+                    if (arr[j] == 1) {
                         after = j;
                         break;
                     }
@@ -39,18 +39,18 @@ public class Test07 {
                 }
             }
 
-            if (i > 0){
+            if (i > 0) {
                 for (int j = i - 1; j >= 0; j--) {
-                    if (arr[j] == 1){
+                    if (arr[j] == 1) {
                         before = j;
                         break;
                     }
-                    
+
                 }
             }
 
             int temp = (i - before) < (i - after) ? (i - before) : (i - after);
-            if (result < temp){
+            if (result < temp) {
                 result = temp;
             }
 
@@ -61,33 +61,36 @@ public class Test07 {
         return result;
     }
 
-    public static int solution2(int[] arr){
+    public static int solution2(int[] arr) {
         // 存1 的位置的数组
         List<Integer> ints = new ArrayList<>();
-
+        // 获取所有1的位置
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 1){
+            if (arr[i] == 1) {
                 ints.add(i);
             }
         }
 
         int result = 0;
-
+        // 遍历所有1 的位置
         for (int i = 0; i < ints.size(); i++) {
-            if (i == 0){
+            // 对于第一个1而言,最大长度是就是当前1所在的位置
+            if (i == 0) {
                 result = ints.get(i);
             }
 
-            if (i == ints.size()-1 && (arr.length - ints.get(i) > result)){
+            // 对于最后一个1而言,最大长度是所传进来数组的最大位置减去当前最后一个1所在的位置再减1
+            // 判断是否是最后一个位置以及是否当前位置的最大长度大于 第一个1 所在的位子距离
+            if (i == ints.size() - 1 && (arr.length - ints.get(i) > result)) {
                 result = arr.length - 1 - ints.get(i);
             }
 
-            if (i > 0 && i < ints.size() - 1 && ((ints.get(i) - ints.get(i - 1)) < (ints.get(i+1) - ints.get(i))
-                    ? (ints.get(i) - ints.get(i - 1)): ((ints.get(i+1) - ints.get(i)))) > result){
-
-                    int before2 = ints.get(i) - ints.get(i - 1) - 1;
-
-                result = before2 % 2 == 0 ? before2 / 2 : (before2 / 2 ) + 1;
+            // 如果在中间,则比较当前位置前一个与后一个各自的距离是否大于之前所获取的位置
+            if (i > 0 && i < ints.size() - 1) {
+                int temp = ((ints.get(i) - ints.get(i - 1)) > (ints.get(i + 1) - ints.get(i)) ? (ints.get(i) - ints.get(i - 1)) : ((ints.get(i + 1) - ints.get(i)))) ;
+                if ((temp % 2 == 0 ? temp / 2 : (temp - 1) / 2) > result){
+                    result = temp % 2 == 0 ? temp / 2 : (temp -1) / 2;
+                }
             }
 
         }
