@@ -41,19 +41,19 @@ public class ClassLoadDemo {
     }
 
     public ClassLoadDemo(){
-        System.out.println("加载了构造方法");
+        System.out.println("ClassLoadDemo --- 加载了构造方法");
     }
 
     {
-        System.out.println("加载了代码块");
+        System.out.println("ClassLoadDemo --- 加载了代码块");
     }
 
     static {
-        System.out.println("加载了静态代码块");
+        System.out.println("ClassLoadDemo --- 加载了静态代码块");
     }
 
     public static String getThing(){
-        System.out.println("调用了静态方法");
+        System.out.println("ClassLoadDemo --- 调用了静态方法");
 
         return getName();
     }
