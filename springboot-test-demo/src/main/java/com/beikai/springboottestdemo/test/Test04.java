@@ -3,7 +3,7 @@ package com.beikai.springboottestdemo.test;
 import org.junit.Test;
 
 /**
- * @ClassName Test04
+ * @ClassName Test04AboutPrintStream
  * @Description TODO
  * @Author Admin
  * @Date 2019/3/31 19:39
@@ -36,7 +36,7 @@ public class Test04 {
     }
     @Override
     public String toString() {
-        return "Test04{" +
+        return "Test04AboutPrintStream{" +
                 "name='" + name + '\'' +
                 ", age='" + age + '\'' +
                 ", username='" + username + '\'' +

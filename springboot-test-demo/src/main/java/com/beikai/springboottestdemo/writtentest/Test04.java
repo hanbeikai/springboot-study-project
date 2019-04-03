@@ -1,7 +1,7 @@
 package com.beikai.springboottestdemo.writtentest;
 
 /**
- * @ClassName Test04
+ * @ClassName Test04AboutPrintStream
  * @Description TODO
  * @Author Admin
  * @Date 2019/3/10 19:50
