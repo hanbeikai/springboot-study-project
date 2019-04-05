@@ -6,6 +6,7 @@ package com.beikai.springboottestdemo.Reflect.test;
  * @Author Admin
  * @Date 2019/4/5 20:05
  * @Version 1.0
+ *  键盘对象
  **/
 public class KeyByUsb implements USB{
     @Override
