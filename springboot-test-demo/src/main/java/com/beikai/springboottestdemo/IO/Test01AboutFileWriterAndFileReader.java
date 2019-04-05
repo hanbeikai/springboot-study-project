@@ -17,6 +17,10 @@ import java.io.IOException;
  *   缺点:
  *      filereader / fileWriter 只能写与当前环境编码兼容的文本文件
  *      如果文本文件与当前环境编码不兼容,使用InputStreamReader/OutputStreamWriter  转换流
+ *
+ *      一般使用filereader 读取 与 当前环境编码一致的文件,如果不一致,会导致乱码,而且只能读取纯文本文件
+ *
+ *      filewriter 保存数据的时候, 同上一样,需要文件编码 与 环境编码格式相同
  **/
 public class Test01AboutFileWriterAndFileReader {
     public static void main(String[] args) {
