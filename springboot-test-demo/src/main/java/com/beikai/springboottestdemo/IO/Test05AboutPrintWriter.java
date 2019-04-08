@@ -21,7 +21,7 @@ public class Test05AboutPrintWriter {
         // 创建字符打印流
         PrintWriter printWriter = null;
         try {
-            printWriter = new PrintWriter(new FileWriter("E:\\test\\abc6.java",true));
+            printWriter = new PrintWriter(new FileWriter("E:\\StorageTest\\abc6.java",true));
 
             try (
                     FileInputStream fileInputStream = new FileInputStream("dddd");

@@ -49,7 +49,7 @@ public class Test02 {
         Class<Outter> outterClass = null;
 
         try {
-            outterClass = (Class<Outter>) Class.forName("com.beikai.springbootsortint.test.Outter");
+            outterClass = (Class<Outter>) Class.forName("com.beikai.springbootsortint.StorageTest.Outter");
             System.out.println(outterClass.getName());
             System.out.println(outterClass.getClass());
 
@@ -62,11 +62,11 @@ public class Test02 {
     @Test
     public void test5(){
         ConcurrentHashMap<String,String> concurrentHashMap = new ConcurrentHashMap<>();
-        concurrentHashMap.put("test","test");
+        concurrentHashMap.put("StorageTest","StorageTest");
         concurrentHashMap.put(null,null);
         for (int i = 0; i < 100; i++) {
 
-            concurrentHashMap.put(UUID.randomUUID().toString(),"test");
+            concurrentHashMap.put(UUID.randomUUID().toString(),"StorageTest");
 
             System.out.println("大小是 : " + concurrentHashMap.size());
         }
@@ -75,11 +75,11 @@ public class Test02 {
     @Test
     public void test6(){
         HashMap<String,String> hashMap = new HashMap<>();
-        hashMap.put("test","test");
+        hashMap.put("StorageTest","StorageTest");
         hashMap.put(null,null);
         for (int i = 0; i < 100; i++) {
 
-            hashMap.put(UUID.randomUUID().toString(),"test");
+            hashMap.put(UUID.randomUUID().toString(),"StorageTest");
 
             System.out.println("大小是 : " + hashMap.size());
         }
@@ -88,12 +88,12 @@ public class Test02 {
     @Test
     public void test7(){
         Hashtable<String,String> hashtable = new Hashtable<>();
-        hashtable.put("test","test");
+        hashtable.put("StorageTest","StorageTest");
 
         hashtable.put(null,null);
         for (int i = 0; i < 100; i++) {
 
-            hashtable.put(UUID.randomUUID().toString(),"test");
+            hashtable.put(UUID.randomUUID().toString(),"StorageTest");
 
             System.out.println("大小是 : " + hashtable.size());
         }

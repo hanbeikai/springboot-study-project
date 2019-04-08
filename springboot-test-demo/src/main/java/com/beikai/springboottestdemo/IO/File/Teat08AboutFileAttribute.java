@@ -13,9 +13,9 @@ import java.io.File;
  *  通过 file 获取文件属性
  *
  *      文件是否存在 ---> true
- *      文件绝对路径 ---> E:\test\abc\hehe.mp4
- *      文件路径 ---> E:\test\abc\hehe.mp4
- *      文件父路径 ---> E:\test\abc
+ *      文件绝对路径 ---> E:\StorageTest\abc\hehe.mp4
+ *      文件路径 ---> E:\StorageTest\abc\hehe.mp4
+ *      文件父路径 ---> E:\StorageTest\abc
  *      文件名 ---> hehe.mp4
  *      文件大小 ---> 23027559
  *      文件是否是文件 ---> true

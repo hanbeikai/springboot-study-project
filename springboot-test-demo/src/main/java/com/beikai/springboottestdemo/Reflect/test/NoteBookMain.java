@@ -23,7 +23,7 @@ public class NoteBookMain {
             noteBookModel.run();
 
             // 读取配置文件中信息  NoteBookMain.class.getResource 获取的是 编译后的 class文件所在路径
-            ///D:/Windows10/DevelopmentTools/IntelliJ_IDEA/WorkSpaceAboutGitHab/springboot-study-project/springboot-test-demo/target/classes/
+            ///D:/Windows10/DevelopmentTools/IntelliJ_IDEA/WorkSpaceAboutGitHab/springboot-study-project/springboot-StorageTest-demo/target/classes/
             String path = NoteBookMain.class.getResource("/").getPath();
             int i = path.lastIndexOf("/target");
             String substring = path.substring(0, i);

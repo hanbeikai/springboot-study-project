@@ -9,7 +9,7 @@ package com.beikai.springboottestdemo.IO.util;
  **/
 public class AddressUtils {
 
-    public static String address = "E:\\test\\abc";
+    public static String address = "E:\\StorageTest\\abc";
 
     public static String getAddress(int num){
         return address+num+".java";

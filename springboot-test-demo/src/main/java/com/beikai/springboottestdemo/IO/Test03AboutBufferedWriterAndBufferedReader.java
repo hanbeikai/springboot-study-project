@@ -26,9 +26,9 @@ public class Test03AboutBufferedWriterAndBufferedReader {
 
     public static void main(String[] args) {
         String fromPath = "D:\\Windows10\\DevelopmentTools\\IntelliJ_IDEA\\WorkSpaceAboutGitHab" +
-                "\\springboot-study-project\\springboot-test-demo\\src\\main\\java\\com\\beikai\\springboottestdemo\\IO\\Test01AboutFileWriterAndFileReader.java";
-        String targetPath = "E:\\test\\abc4.java";
-        String targetPath2 = "E:\\test\\abc5.java";
+                "\\springboot-study-project\\springboot-StorageTest-demo\\src\\main\\java\\com\\beikai\\springboottestdemo\\IO\\Test01AboutFileWriterAndFileReader.java";
+        String targetPath = "E:\\StorageTest\\abc4.java";
+        String targetPath2 = "E:\\StorageTest\\abc5.java";
         //reader(fromPath,targetPath);
         //writer(fromPath,targetPath);
 

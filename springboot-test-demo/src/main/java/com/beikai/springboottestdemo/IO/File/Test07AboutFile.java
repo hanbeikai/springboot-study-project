@@ -23,7 +23,7 @@ public class Test07AboutFile {
         file.mkdir();
 
         // 根据文件地址,创建子文件夹
-        File file1 = new File(AddressUtils.getFilePath(0)+"\\test");
+        File file1 = new File(AddressUtils.getFilePath(0)+"\\StorageTest");
         file1.mkdir();
 
         // 根据文件路径,以及文件名,创建文件  第一个参数是路径,第二个参数是文件名

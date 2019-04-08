@@ -26,9 +26,9 @@ public class Test01AboutFileWriterAndFileReader {
     public static void main(String[] args) {
 
         String fromPath = "D:\\Windows10\\DevelopmentTools\\IntelliJ_IDEA\\WorkSpaceAboutGitHab" +
-                "\\springboot-study-project\\springboot-test-demo\\src\\main\\java\\com\\beikai\\springboottestdemo\\IO\\Test01AboutFileWriterAndFileReader.java";
-        String targetPath = "E:\\test\\abc.java";
-        String targetPath2 = "E:\\test\\abc2.java";
+                "\\springboot-study-project\\springboot-StorageTest-demo\\src\\main\\java\\com\\beikai\\springboottestdemo\\IO\\Test01AboutFileWriterAndFileReader.java";
+        String targetPath = "E:\\StorageTest\\abc.java";
+        String targetPath2 = "E:\\StorageTest\\abc2.java";
 
         copyFileOneChar(fromPath,targetPath);
         copyFileOneArray(fromPath,targetPath2);

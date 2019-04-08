@@ -16,7 +16,7 @@ public class Test04AboutPrintStream {
     public static void main(String[] args) {
         OutputStream outputStream = null;
         try {
-            outputStream = new FileOutputStream("E:\\test\\abc5.java",true);
+            outputStream = new FileOutputStream("E:\\StorageTest\\abc5.java",true);
 
             PrintStream printStream = new PrintStream(outputStream);
             // 打印到文件中

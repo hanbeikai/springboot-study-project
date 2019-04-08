@@ -25,8 +25,8 @@ public class Test02AboutOutputStreamWriterAndInputStreamReader {
     public static void main(String[] args) {
 
         String fromPath = "D:\\Windows10\\DevelopmentTools\\IntelliJ_IDEA\\WorkSpaceAboutGitHab" +
-                "\\springboot-study-project\\springboot-test-demo\\src\\main\\java\\com\\beikai\\springboottestdemo\\IO\\Test01AboutFileWriterAndFileReader.java";
-        String targetPath = "E:\\test\\abc3.java";
+                "\\springboot-study-project\\springboot-StorageTest-demo\\src\\main\\java\\com\\beikai\\springboottestdemo\\IO\\Test01AboutFileWriterAndFileReader.java";
+        String targetPath = "E:\\StorageTest\\abc3.java";
 
         reader(fromPath,targetPath);
 
