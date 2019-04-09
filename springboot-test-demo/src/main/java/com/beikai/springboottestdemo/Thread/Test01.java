@@ -92,7 +92,7 @@ import java.util.concurrent.FutureTask;
  **/
 
 /**
- *  继承 thread, 重写run()方法, run()方法中的代码块是要执行的代码块
+ * 继承 thread, 重写run()方法, run()方法中的代码块是要执行的代码块
  */
 class MyThread2 extends Thread {
 
@@ -108,7 +108,7 @@ class MyThread2 extends Thread {
 /**
  * 实现 runable的方式实现线程
  */
-class MyThread3 implements Runnable{
+class MyThread3 implements Runnable {
 
     /**
      * 调用线程的方法
@@ -124,10 +124,11 @@ class MyThread3 implements Runnable{
 /**
  * 实现 callable的方式创建线程
  */
-class MyThread4 implements Callable<Integer>{
+class MyThread4 implements Callable<Integer> {
 
     /**
      * 重写 call 的方法  在方法中填写代码块
+     *
      * @return
      * @throws Exception
      */
@@ -142,13 +143,41 @@ class MyThread4 implements Callable<Integer>{
     }
 }
 
+class MyThread5 extends Thread{
+
+    /**
+     * 添加一个中断的标志
+     */
+    public boolean flag = true;
+
+    @Override
+    public void run() {
+        for (int i = 0; flag && i < 100; i++) {
+            System.out.println(Thread.currentThread().getName() + "-->" + i);
+        }
+    }
+}
+
+class MyThread6 implements Runnable{
+
+    /**
+     * 添加一个中断的标志
+     */
+    public boolean flag = false;
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 200; i++) {
+            if (flag){
+                return; // 结束run方法的
+            }
+            System.out.println(Thread.currentThread().getName() + "-->" + i);
+        }
+    }
+}
+
 public class Test01 {
 
-    public static void main(String[] args) {
-
-        switchMethod(11);
-
-    }
 
     private static void switchMethod(int num) {
         switch (num) {
@@ -186,7 +215,7 @@ public class Test01 {
                 createThreadType02();
                 break;
 
-            case  9:
+            case 9:
                 // 通过 callable的方式创建线程
                 createThreadType03();
                 break;
@@ -202,34 +231,313 @@ public class Test01 {
                 // 关于线程的优先级
                 aboutThreadOrder();
                 break;
+            case 13:
+                // 关于线程休眠
+                aboutThreadSleep();
+                break;
+            case 14:
+                // 关于线程中断
+                aboutThreadInterrupt();
+                break;
+            case 15:
+                // 关于线程让步
+                aboutThreadYield();
+                break;
+            case 16:
+                // 关于线程加入
+                aboutThreadJoin();
+                break;
+
+            case 17:
+                // 关于线程终止
+                aboutThreadStop();
+                break;
+
+            case 18:
+                // 关于线程终止-推荐的方式
+                aboutThreadStop2();
+                break;
             default:
                 break;
         }
     }
+    public static void main(String[] args) {
+
+        switchMethod(18);
+
+    }
+
+    /**
+     * 关于线程终止(推荐的方式)
+     *
+     *  上一种方式有线程安全性问题,所以改进的方式是添加一个标志,用于中断线程
+     *
+     *
+     */
+    private static void aboutThreadStop2() {
+        // 创建线程对象
+        MyThread5 myThread5 = new MyThread5();
+        // 开启线程
+        myThread5.start();
+
+        // 创建线程2
+        MyThread6 myThread6 = new MyThread6();
+        Thread thread = new Thread(myThread6);
+        thread.start();
+
+        // 主线程
+        for (int i = 0; i < 50; i++) {
+            System.out.println(Thread.currentThread().getName() + "-->" + i);
+        }
+
+        // 中断线程1
+        myThread5.flag = false;
+
+        // 中断线程2
+        myThread6.flag = true;
+
+
+
+    }
+
+
+    /**
+     * 关于线程终止
+     *  可以使用 thread.stop() 但是这个方法已经过时,还牵扯到安全性问题
+     *   例如:
+     *      我们想让线程2 执行完毕后,就终止线程1,所以在线程2后面加上thread.stop();
+     *      但是可能会出现这种情况,但线程2 执行完毕后,线程1获取了cpu执行权,线程1继续执行,需要等到线程2获取到cpu执行权后才能执行 thread.stop(),
+     *      这中间就产生了一些不需要的数据.
+     *
+     *      main-->99
+     *      t1-->71
+     *      t1-->72
+     *      t1-->73
+     *
+     */
+    private static void aboutThreadStop() {
+        // 创建线程对象
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "-->" + i);
+            }
+        }, "t1");
+        // 开启线程
+        thread.start();
+
+        // 主线程
+        for (int i = 0; i < 100; i++) {
+            System.out.println(Thread.currentThread().getName() + "-->" + i);
+        }
+
+        // 终止线程1
+        thread.stop();
+
+    }
+
+    /**
+     * 关于线程的 合并
+     *
+     *  thread.join();
+     *
+     *   当前线程与另一个线程合并,另一个线程结束后才执行这个线程
+     */
+    private static void aboutThreadJoin() {
+        // 创建线程对象
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "------>" + i);
+            }
+        }, "t1");
+        // 开启线程
+        thread.start();
+
+        // 创建线程对象
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "----->" + i);
+                if (i == 50){
+                    try {
+                        // 加入thread线程,当前线程为准备状态,当thread线程执行完毕后,当前线程转化为就绪状态
+                        thread.join();
+                        System.out.println("执行了");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }, "t2");
+        // 开启线程
+        thread2.start();
+    }
+
+    /**
+     * 关于线程让步问题
+     *  Thread.yield()
+     *
+     *   把线程转换为就绪状态
+     */
+    private static void aboutThreadYield() {
+
+        // 创建线程对象
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "-->" + i);
+                if (i % 8 == 0){
+                    // 线程让步,转换未就绪状态,重新抢夺cpu执行权
+                    System.out.println("转让了");
+                    Thread.yield();
+                }
+            }
+        }, "t1");
+        // 开启线程
+        thread.start();
+
+        // 创建线程对象
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "----->" + i);
+
+
+            }
+        }, "t2");
+        // 开启线程
+        thread2.start();
+    }
+
+    /**
+     * 关于线程中断问题
+     * thread.Interrupt()
+     * 一般情况下,中断的都是睡眠或等待中的线程
+     *  中断睡眠的线程睡眠状态会导致异常抛出,但是这个异常只是说明了当前线程的睡眠状态被打断,可以选择不抛出
+     */
+    private static void aboutThreadInterrupt() {
+        // 创建线程对象
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "-->" + i);
+                if (i == 20) {
+                    try {
+                        Thread.sleep(10000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+        }, "t1");
+        // 开启线程
+        thread.start();
+
+        // 主线程
+        for (int i = 0; i < 50; i++) {
+            System.out.println(Thread.currentThread().getName() + "------>" + i);
+        }
+
+        // 中断正在等待的线程睡眠状态,唤醒他
+        thread.interrupt();
+
+
+    }
+
+    /**
+     * 关于线程休眠问题
+     * thread.sleep(休眠时间(毫秒));
+     * <p>
+     * 1. 静态方法,直接调用
+     * 2. 睡眠单位 : 毫秒
+     * 3. sleep() 有受检异常需要处理
+     * 4. sleep() 方法让所在的线程睡眠
+     * <p>
+     * 由于是重写的run方法,则 异常只能通过try-catch的方式
+     */
+    private static void aboutThreadSleep() {
+        // 创建线程对象
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "-->" + i);
+
+                if (i == 50) {
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }, "t1");
+        // 开启线程
+        thread.start();
+
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "------>" + i);
+            }
+        }, "t2");
+        // 开启线程
+        thread2.start();
+
+    }
 
     /**
      * 关于线程优先级的测试
+     * 线程的优先级分为 1-10,优先级越大,越具有大概率获取cpu使用权
+     * 线程默认权限是 5
+     * <p>
+     * thread.getPriority() 获取优先级
+     * thread.setPriority(10);  设置优先级
      */
     private static void aboutThreadOrder() {
+        // 创建线程对象
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "-->" + i);
+            }
+        });
+        // 设置优先级
+        thread.setPriority(1);
+        // 开启线程
+        thread.start();
+
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + "-->" + i);
+            }
+        });
+        // 设置优先级
+        thread2.setPriority(10);
+        // 开启线程
+        thread2.start();
+
+        // 主线程
+        for (int i = 0; i < 300; i++) {
+            System.out.println("主线程 : " + i);
+        }
+
+        // 获取线程的优先级  默认是5
+        System.out.println("thread线程优先级 : " + thread.getPriority());
+        System.out.println("thread2线程优先级 : " + thread2.getPriority());
+        System.out.println("主线程优先级 : " + Thread.currentThread().getPriority());
+
 
     }
 
     /**
      * 关于线程的生命周期
-     *
-     *   thread.getState()  获取线程的状态
-     *      1. NEW        Thread state for a thread which has not yet started. 线程还没有执行start()方法时的状态
-     *      2. RUNNABLE   Thread state for a runnable thread    线程已经运行,也就是 执行过start() 后的状态
-     *      3. BLOCKED    Thread state for a thread blocked waiting for a monitor lock  线程被阻塞,正在等待监视器锁
-     *      4. WAITING    Thread state for a waiting thread.   线程正在等待
-     *      5. TIMED_WAITING   Thread state for a waiting thread with a specified waiting time  线程正在等待,以一个特点的时间
-     *      6. TERMINATED   hread state for a terminated thread. 线程回一个已终止状态
-     *
-     *   getState() 返回的 state是一个枚举类类型,java 中的数据类型是 : 类,接口,数组,枚举类型
-     *
-     *    枚举类型的数据只能取值定义的值, 如state 枚举类型中 的取值只能是上面6个
-     *
-     *    经常使用枚举类型定义 不连续的值, 如: 星期
+     * <p>
+     * thread.getState()  获取线程的状态
+     * 1. NEW        Thread state for a thread which has not yet started. 线程还没有执行start()方法时的状态
+     * 2. RUNNABLE   Thread state for a runnable thread    线程已经运行,也就是 执行过start() 后的状态
+     * 3. BLOCKED    Thread state for a thread blocked waiting for a monitor lock  线程被阻塞,正在等待监视器锁
+     * 4. WAITING    Thread state for a waiting thread.   线程正在等待
+     * 5. TIMED_WAITING   Thread state for a waiting thread with a specified waiting time  线程正在等待,以一个特点的时间
+     * 6. TERMINATED   hread state for a terminated thread. 线程回一个已终止状态
+     * <p>
+     * getState() 返回的 state是一个枚举类类型,java 中的数据类型是 : 类,接口,数组,枚举类型
+     * <p>
+     * 枚举类型的数据只能取值定义的值, 如state 枚举类型中 的取值只能是上面6个
+     * <p>
+     * 经常使用枚举类型定义 不连续的值, 如: 星期
      */
     private static void aboutThreadLife() {
         // 创建线程
@@ -257,12 +565,12 @@ public class Test01 {
 
     /**
      * 线程的一些常用方法
-     *  Thread.currentThread()  获取当前线程
-     *  Thread.currentThread().getName()  获取当前线程名称
-     *  thread.setName("线程1")  设置线程名的方式1
-     *  new Thread(new runable(){},"线程2"); 通过构造的方式设置线程名
-     *  thread2.setDaemon(true);  设置线程为守护线程, 守护线程是服务线程的,当jvm中只有守护线程是,jvm会退出
-     *  thread.isAlive()  判断线程是否还活着
+     * Thread.currentThread()  获取当前线程
+     * Thread.currentThread().getName()  获取当前线程名称
+     * thread.setName("线程1")  设置线程名的方式1
+     * new Thread(new runable(){},"线程2"); 通过构造的方式设置线程名
+     * thread2.setDaemon(true);  设置线程为守护线程, 守护线程是服务线程的,当jvm中只有守护线程是,jvm会退出
+     * thread.isAlive()  判断线程是否还活着
      */
     private static void aboutThreadMethod() {
         // 创建一个线程
@@ -286,7 +594,7 @@ public class Test01 {
                     System.out.println(Thread.currentThread().getName() + "--->" + i);
                 }
             }
-        },"线程2");
+        }, "线程2");
         // 设置线程为守护线程
         thread2.setDaemon(true);
         // 启动线程
@@ -307,8 +615,8 @@ public class Test01 {
 
     /**
      * 通过 callable的方式 创建线程
-     *  这种方式可以有返回值, 但是一般情况下不这么使用, 而是在线程池中使用
-     *   通过使用线程池的方式,减少创建线程和释放线程的开销
+     * 这种方式可以有返回值, 但是一般情况下不这么使用, 而是在线程池中使用
+     * 通过使用线程池的方式,减少创建线程和释放线程的开销
      */
     private static void createThreadType03() {
         // 定义一个类实现 callable
@@ -333,14 +641,14 @@ public class Test01 {
 
     /**
      * 通过实现 runable的方式创建线程,但是有两种方式
-     *
-     *      1. 使用匿名内部类
-     *      2. 使用实现类
-     *
-     *      如果从结果来说,两者方式并没有什么区别,但是如果从过程来说, 使用匿名内部类的方式要比使用实现类的方式麻烦, 比如说如果想要开启多个线程, 使用匿名内部类的话,每次都
-     *      需要实现 new thread(new runable(){代码块}) ,而使用实现类的方式,每次只需要 thread t = new thread(实现类); t.start();就可以了,
-     *
-     *      所以,如果创建的线程不多,推荐使用匿名内部类,如果线程多,推荐使用 实现类的方式
+     * <p>
+     * 1. 使用匿名内部类
+     * 2. 使用实现类
+     * <p>
+     * 如果从结果来说,两者方式并没有什么区别,但是如果从过程来说, 使用匿名内部类的方式要比使用实现类的方式麻烦, 比如说如果想要开启多个线程, 使用匿名内部类的话,每次都
+     * 需要实现 new thread(new runable(){代码块}) ,而使用实现类的方式,每次只需要 thread t = new thread(实现类); t.start();就可以了,
+     * <p>
+     * 所以,如果创建的线程不多,推荐使用匿名内部类,如果线程多,推荐使用 实现类的方式
      */
     private static void createThreadType02() {
 
@@ -369,10 +677,10 @@ public class Test01 {
 
     /**
      * 通过继承的方式开启线程
-     *  当前程序的主线程和子线程同时执行,但是每次运行的结果不同,这是因为多线程中的多个线程,只有抢到cpu的执行权后,才户执行,
-     *
-     *  在单核cpu中,某一时刻cpu只能执行一个任务,因为cpu的执行速度非常快,可以快速的在各个线程之间进行切换,对于用户而言,感觉就是多个线程同时执行,
-     *  对于多线程 cpu中, 同时执行多个线程,所以,多线程推荐使用多核的cpu
+     * 当前程序的主线程和子线程同时执行,但是每次运行的结果不同,这是因为多线程中的多个线程,只有抢到cpu的执行权后,才户执行,
+     * <p>
+     * 在单核cpu中,某一时刻cpu只能执行一个任务,因为cpu的执行速度非常快,可以快速的在各个线程之间进行切换,对于用户而言,感觉就是多个线程同时执行,
+     * 对于多线程 cpu中, 同时执行多个线程,所以,多线程推荐使用多核的cpu
      */
     private static void createThreadType01() {
         // 声明继承了 thread 的对象
@@ -388,11 +696,11 @@ public class Test01 {
 
     /**
      * 关于死锁的演示
-     *  关于死锁:
-     *  *  当多个线程同步时,他们获取锁的顺序不一致,导致线程相互等待的情况,称之为死锁
-     *  *
-     *  *  避免死锁:
-     *  *      保持锁的顺序都一致
+     * 关于死锁:
+     * *  当多个线程同步时,他们获取锁的顺序不一致,导致线程相互等待的情况,称之为死锁
+     * *
+     * *  避免死锁:
+     * *      保持锁的顺序都一致
      */
     private static void aboutDeadLock() {
 
