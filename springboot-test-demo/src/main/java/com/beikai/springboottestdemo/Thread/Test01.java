@@ -69,6 +69,12 @@ import java.util.concurrent.FutureTask;
  * 3). 线程b想要获取锁对象,由于同一时间锁对象只能由一个线程获取,此时已经被a获取,所以线程b进入等待锁对象池,变成阻塞状态
  * 4). 线程a获取cpu执行权,并执行完同步代码块,释放线锁对象,转换为就绪状态
  * 5). 等待锁对象池中的线程b获取锁对象,转为就绪状态,获取cpu执行权,执行同步代码块
+ *
+ * 2. 使用lock对象
+ *      Lock lock = new ReentrantLock();  // 创建一个锁对象
+ *         lock.lock();  // 加锁
+ *         lock.tryLock();   // 尝试获取锁,可以在括号内添加时间,表示多久的时间尝试获取一下锁
+ *         lock.unlock();  // 释放锁
  * <p>
  * <p>
  * <p>
@@ -692,6 +698,8 @@ public class Test01 {
         for (int i = 0; i < 100; i++) {
             System.out.println("主线程 : " + i);
         }
+
+
     }
 
     /**
