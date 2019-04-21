@@ -4,34 +4,20 @@
 一些使用springboot的学习项目
 
 #### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+|项目名|项目描述|
+|:---|:---|
+|common-springboot-starter|一个 测试 关于 springboot 自定义 starter的项目|
+|common|一个关于springboot自定义starter的项目|
+|hashmap_demo|一个用于测试hashmap实现创建的项目|
+|springboot-dubbo|一个关于dubbo使用的项目	|
+|springboot-interceptor-and-filter|一个关于使用interceptor和filter以及aop实现日志记录的项目|
+|springboot-rabbitmq-consumer|一个关于mq消费端的项目|
+|springboot-rabbitmq|一个关于mq提供端的项目|
+|springboot-redis-lock|一个关于redis使用的项目|
+|springboot-sortint|一个关于一些排序算法的项目|
+|springboot-starter-demo|一个用于测试自定义springboot-starter的jar包是否可用的项目|
+|springboot-study2|一个关于ssm后端+微信小程序前端的学习项目|
+|springboot-test-demo|一个用于测试一些知识点的项目|
+|springboot-thread|	一个关于线程的项目|
+|springmvc-shrio|一个关于shiro使用的项目|
+|笔记文件|一些笔记存放的位置|
