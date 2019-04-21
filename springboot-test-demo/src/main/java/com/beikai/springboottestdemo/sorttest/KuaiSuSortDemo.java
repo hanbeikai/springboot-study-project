@@ -51,7 +51,6 @@ public class KuaiSuSortDemo {
         }
 
         arr[a] = temp;
-
         kuaisu(arr,start,a-1);
         kuaisu(arr,a+1,end);
 
