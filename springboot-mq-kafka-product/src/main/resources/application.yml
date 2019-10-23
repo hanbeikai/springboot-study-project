@@ -10,10 +10,31 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer  # \u6307\u5B9A\u6D88\u606Fkey\u548C\u6D88\u606F\u4F53\u7684\u7F16\u89E3\u7801\u65B9\u5F0F
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       bootstrap-servers: 172.16.195.133:9092,172.16.195.133:9093,172.16.195.133:9094
-
+  datasource:
+    url: jdbc:mysql://172.16.195.130:3306/mytest
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    database: 0
+    host: 172.16.195.133
+    port: 6379
+    password: root
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 8
+    lettuce:
+      pool:
+        min-idle: 0
+    timeout: 10000ms
 
 server:
   port: 8080
 
 
-
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: debug

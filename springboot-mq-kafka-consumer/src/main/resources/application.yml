@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: kafka-user-consumer
+  kafka:
+    bootstrap-servers: 172.16.195.133:9092,172.16.195.133:9093,172.16.195.133:9094  # \u6307\u5B9Akafka \u4EE3\u7406\u5730\u5740\uFF0C\u53EF\u4EE5\u591A\u4E2A
+    consumer:
+      group-id: user-log-group #   # \u6307\u5B9A\u9ED8\u8BA4\u6D88\u8D39\u8005group id
+      # earliest:\u5F53\u5404\u5206\u533A\u4E0B\u6709\u5DF2\u63D0\u4EA4\u7684offset\u65F6\uFF0C\u4ECE\u63D0\u4EA4\u7684offset\u5F00\u59CB\u6D88\u8D39\uFF1B\u65E0\u63D0\u4EA4\u7684offset\u65F6\uFF0C\u4ECE\u5934\u5F00\u59CB\u6D88\u8D39
+      # latest:\u5F53\u5404\u5206\u533A\u4E0B\u6709\u5DF2\u63D0\u4EA4\u7684offset\u65F6\uFF0C\u4ECE\u63D0\u4EA4\u7684offset\u5F00\u59CB\u6D88\u8D39\uFF1B\u65E0\u63D0\u4EA4\u7684offset\u65F6\uFF0C\u6D88\u8D39\u65B0\u4EA7\u751F\u7684\u8BE5\u5206\u533A\u4E0B\u7684\u6570\u636E
+      # none:topic\u5404\u5206\u533A\u90FD\u5B58\u5728\u5DF2\u63D0\u4EA4\u7684offset\u65F6\uFF0C\u4ECEoffset\u540E\u5F00\u59CB\u6D88\u8D39\uFF1B\u53EA\u8981\u6709\u4E00\u4E2A\u5206\u533A\u4E0D\u5B58\u5728\u5DF2\u63D0\u4EA4\u7684offset\uFF0C\u5219\u629B\u51FA\u5F02\u5E38
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer  # \u6307\u5B9A\u6D88\u606Fkey\u548C\u6D88\u606F\u4F53\u7684\u7F16\u89E3\u7801\u65B9\u5F0F
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+
+server:
+  port: 8081
+
+
+
