@@ -61,7 +61,7 @@
 		<dependency>
 			<groupId>com.alibaba.otter</groupId>
 			<artifactId>canal.client</artifactId>
-			<version>1.0.22</version>
+			<version>1.0.24</version>
 		</dependency>
 		<!--mysql 相关-->
 		<dependency>

@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.net.InetSocketAddress;
 import java.util.List;
 
@@ -34,7 +33,7 @@ public class CanalSimple {
     @Autowired
     private RedisTemplate<String,Object> redisTemplate;
 
-    @PostConstruct
+   // @PostConstruct
     public  void syn() {
         // 创建链接
         CanalConnector connector = CanalConnectors.newSingleConnector(new InetSocketAddress("172.16.195.133",
