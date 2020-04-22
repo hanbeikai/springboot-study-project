@@ -91,4 +91,6 @@ public interface BaseService<T> {
 	 * @throws
 	 */
 	 Object findByObject(Object obj);
+
+	 List<T> getAll();
 }

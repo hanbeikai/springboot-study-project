@@ -1,14 +1,11 @@
 package com.beikai.MutilOfDruid.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.beikai.MutilOfDruid.dao.BaseDao;
 import com.beikai.MutilOfDruid.dao.master.UserDao;
 import com.beikai.MutilOfDruid.pojo.User;
 import com.beikai.MutilOfDruid.service.UserService;
-
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * 
@@ -28,9 +25,4 @@ public class UserServiceImpl extends BaseServiceImpl<User>  implements UserServi
 	protected BaseDao<User> getMapper() {
 		return this.userDao;
 	}
-
-    @Override
-    public List<User> getAll() {
-        return userDao.findAll();
-    }
 }

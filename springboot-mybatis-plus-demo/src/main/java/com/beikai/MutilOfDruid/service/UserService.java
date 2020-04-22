@@ -3,8 +3,6 @@ package com.beikai.MutilOfDruid.service;
 
 import com.beikai.MutilOfDruid.pojo.User;
 
-import java.util.List;
-
 /**
  * 
 * Title: UserService
@@ -15,7 +13,5 @@ import java.util.List;
 * @date 2018年3月19日
  */
 public interface UserService extends BaseService<User>{
-
-    List<User> getAll();
 
 }

@@ -1,5 +1,7 @@
 package com.beikai.MutilOfDruid.dao;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
 /**
@@ -11,7 +13,8 @@ import java.util.List;
 * @author pancm
 * @date 2018年4月12日
  */
-public interface BaseDao<T> {
+@Component
+public interface BaseDao<T>{
 	/**
 	 * 单条新增插入数据
 	 * @param entity
@@ -20,8 +23,8 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	void insert(T entity) throws Exception;
-	
-	
+
+
 	/**
 	 * 批量新增据插入数据
 	 * @param entityList
@@ -30,7 +33,7 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	int insertBatch(List<T> entityList) throws Exception;
-	
+
 	/**
 	 * 更新数据
 	 *
@@ -40,7 +43,7 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	void update(T entity) throws Exception;
-	
+
 	/**
 	 * 根据ID删除数据
 	 * @param id
@@ -48,16 +51,8 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	 void deleteByPrimaryKey(int id) throws Exception;
-	
-	/**
-	 * 删除数据
-	 * @param entity
-	 * @throws Exception
-	 * @throws
-	 */
-	 void delete(T entity) throws Exception;
-	
-	
+
+
 	/**
 	 * 根据id查询单个记录
 	 *
@@ -67,7 +62,7 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	 T findByPrimaryKey(int id);
-	
+
 	/**
 	 * 根据对象查询单个记录
 	 *
@@ -77,22 +72,16 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	 T findByEntity(T entity);
-	
-	 
-	 
+
 	/**
 	 * 根据对象查询多条记录
 	 * @param entity
 	 * @return
 	 */
 	 List<T> findByListEntity(T entity);
-	
-	/**
-	 * 查询所有记录
-	 * @return
-	 */
-	 List<T> findAll();
-	 
+
+	 List<T> getAll();
+
 	/**
 	 * 根据对象查询信息
 	 *
@@ -102,7 +91,9 @@ public interface BaseDao<T> {
 	 * @throws
 	 */
 	 Object findByObject(Object obj);
-	
-	
-	
+
+
+    List<T> findAll();
+
+    void delete(T entity);
 }

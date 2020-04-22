@@ -24,7 +24,20 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
 	private static final Logger logger= LoggerFactory.getLogger(BaseServiceImpl.class);
 
 	protected abstract BaseDao<T> getMapper();
-	
+
+	@Override
+	public List<T> getAll() {
+
+		List<T> list = null;
+
+		try {
+			list = getMapper().getAll();
+		} catch (Exception e) {
+			logger.error("查询失败，原因是[{}]",e);
+		}
+
+		return list;
+	}
 
 	@Override
 	public boolean insert(T entity)  {
@@ -132,7 +145,9 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
 		}
 		return result;
 	}
-	
+
+
+
 	private String getClassName(T t){
 		String str="";
 		if(t instanceof User){
