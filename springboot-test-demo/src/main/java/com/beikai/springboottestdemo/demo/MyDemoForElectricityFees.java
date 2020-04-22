@@ -20,17 +20,17 @@ public class MyDemoForElectricityFees {
         // 输入录入时间
         LocalDate now = LocalDate.now();
         // 输入上次记录时间
-        String beforeDate = "2019-12-19";
+        String beforeDate = "2020-04-01";
         // 输入总电费
-        BigDecimal totalFees = new BigDecimal("644.52");
+        BigDecimal totalFees = new BigDecimal("287.29");
         // 输入上次左侧表数
-        BigDecimal leftBeforeUse = new BigDecimal("15015");
+        BigDecimal leftBeforeUse = new BigDecimal("15817");
         // 输入上次右侧表数
-        BigDecimal rightBeforeUse = new BigDecimal("12520");
+        BigDecimal rightBeforeUse = new BigDecimal("13398");
         // 输入当前左侧表数
-        BigDecimal leftCurrUse = new BigDecimal("15551");
+        BigDecimal leftCurrUse = new BigDecimal("15913");
         // 输入当前右侧表数
-        BigDecimal rightCurrUse = new BigDecimal("13063");
+        BigDecimal rightCurrUse = new BigDecimal("13535");
 
         System.out.println("=====================> 展示信息 <=====================");
         System.out.println("本月电费计算时间 ：" + now);
