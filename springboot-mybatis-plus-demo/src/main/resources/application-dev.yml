@@ -15,7 +15,6 @@ spring:
       connection-test-query: SELECT 1
 
 
-
 swagger:
   enabled: true
   docket:

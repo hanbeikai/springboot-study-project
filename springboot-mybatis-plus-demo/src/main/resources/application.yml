@@ -4,7 +4,7 @@ spring:
   application:
     name: mybatis-plus-demo
   profiles:
-    active: more
+    active: more2
   http:
     encoding:
       force: true
