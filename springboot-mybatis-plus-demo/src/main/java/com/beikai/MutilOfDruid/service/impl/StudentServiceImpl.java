@@ -1,12 +1,9 @@
 package com.beikai.MutilOfDruid.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.beikai.MutilOfDruid.dao.BaseDao;
 import com.beikai.MutilOfDruid.dao.cluster.StudentDao;
 import com.beikai.MutilOfDruid.pojo.Student;
 import com.beikai.MutilOfDruid.service.StudentService;
+import org.springframework.stereotype.Service;
 
 
 /**
@@ -19,13 +16,6 @@ import com.beikai.MutilOfDruid.service.StudentService;
 * @date 2018年3月19日
  */
 @Service
-public class StudentServiceImpl extends BaseServiceImpl<Student>  implements  StudentService {
-	@Autowired
-	private StudentDao studentDao;
-	
-	@Override
-	protected BaseDao<Student> getMapper() {
-		return this.studentDao;
-	}
+public class StudentServiceImpl extends BaseServiceImpl<StudentDao,Student>  implements  StudentService {
 	
 }

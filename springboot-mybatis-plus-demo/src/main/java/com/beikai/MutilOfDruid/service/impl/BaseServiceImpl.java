@@ -8,6 +8,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -20,10 +21,18 @@ import java.util.List;
 * @author pancm
 * @date 2018年4月12日
  */
-public abstract class BaseServiceImpl<T> implements BaseService<T> {
+public class BaseServiceImpl<M extends BaseDao<T>,T> implements BaseService<T> {
 	private static final Logger logger= LoggerFactory.getLogger(BaseServiceImpl.class);
 
-	protected abstract BaseDao<T> getMapper();
+	@Autowired
+	protected M baseDao;
+
+	public BaseServiceImpl() {
+	}
+
+	protected  M getMapper(){
+		return this.baseDao;
+	};
 
 	@Override
 	public List<T> getAll() {

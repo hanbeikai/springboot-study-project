@@ -1,7 +1,5 @@
 package com.beikai.MutilOfDruid.dao;
 
-import org.springframework.stereotype.Component;
-
 import java.util.List;
 
 /**
@@ -13,7 +11,6 @@ import java.util.List;
 * @author pancm
 * @date 2018年4月12日
  */
-@Component
 public interface BaseDao<T>{
 	/**
 	 * 单条新增插入数据
