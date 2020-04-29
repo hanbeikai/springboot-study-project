@@ -58,8 +58,8 @@ class Mythread011 extends Thread {
 
     @Override
     public void run() {
-        while (true) {
-            myServiceCondition01.await();
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            myServiceCondition01.await(i);
         }
     }
 }
@@ -74,11 +74,10 @@ class Mythread012 extends Thread {
 
     @Override
     public void run() {
-        while (true) {
 
-            myServiceCondition01.signal();
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            myServiceCondition01.signal(i);
         }
-
     }
 }
 
@@ -87,73 +86,65 @@ class MyServiceCondition05 {
     private Condition condition = lock.newCondition();
     private Boolean isHaveVlaue = false;
 
-    void await() {
+    void await(int i) {
         lock.lock();
         try {
-            System.out.println(Thread.currentThread().getName() + " 抢到了锁 ！（set）【" + isHaveVlaue + "】");
             // ishavevlaue 为true 等待
-            if (isHaveVlaue) {
-                System.out.println("出现了连续的情况⭐️" + Thread.currentThread().getName());
-                System.out.println(Thread.currentThread().getName() + " 调用了等待 （set）【" + isHaveVlaue + "】");
+            while (isHaveVlaue) {
+                System.out.println("出现了连续的情况☆☆" + Thread.currentThread().getName());
                 condition.await();
-                System.out.println(Thread.currentThread().getName() + " 接受到了唤醒 （set）【" + isHaveVlaue + "】");
             }
             // 为false ，设置为true
             isHaveVlaue = true;
             //System.out.println("set  ishavevlaue 的 值为 ： " + isHaveVlaue);
             // 唤醒 ishavevalue为 false时 休眠的线程
             /**
-             * 功能描述:  解决出现重复的情况 是使用通知所有的
+             * 功能描述:  解决出现假死的情况 是使用通知所有的
              * 出现了连续的情况⭐️⭐Thread-1
              * 出现了连续的情况⭐️⭐Thread-3
              * ⭐️⭐Thread-2
              * 出现了连续的情况⭐️Thread-2
              * 出现了连续的情况⭐️Thread-4
              */
-
-             condition.signal();
-            System.out.println(Thread.currentThread().getName() + " 调用了唤醒 （set）【" + isHaveVlaue + "】");
-            //condition.signalAll();
+            System.out.println("打印 ☆");
+            //condition.signal();
+            condition.signalAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
-            System.out.println(Thread.currentThread().getName() + " 释放了锁 ！（set）【" + isHaveVlaue + "】");
+            System.out.println(Thread.currentThread().getName() + " 释放了锁 ！（set）【" + isHaveVlaue + " -> " + i + " 】");
         }
     }
 
-    void signal() {
+    void signal(int i) {
         lock.lock();
         try {
-            System.out.println(Thread.currentThread().getName() + " 抢到了锁 ！（get）【" + isHaveVlaue + "】");
             // 为false时， 等待
-            if (!isHaveVlaue) {
-                System.out.println("出现了连续的情况⭐️⭐" + Thread.currentThread().getName());
-                System.out.println(Thread.currentThread().getName() + " 调用了等待 （get）【" + isHaveVlaue + "】");
+            while (!isHaveVlaue) {
+                System.out.println("出现了连续的情况★★" + Thread.currentThread().getName());
                 condition.await();
-                System.out.println(Thread.currentThread().getName() + " 接受到了唤醒 （get）【" + isHaveVlaue + "】");
             }
             // 为true时，谁知为false
             isHaveVlaue = false;
             //System.out.println("get  ishavevlaue 的 值为 ： " + isHaveVlaue);
             // 唤醒 ishavevlaue为 true时 休眠的线程
             /**
-             * 功能描述:  解决出现重复的情况 是使用通知所有的
+             * 功能描述:  解决出现假死的情况 是使用通知所有的
              * 出现了连续的情况⭐️⭐Thread-1
              * 出现了连续的情况⭐️⭐Thread-3
              * ⭐️⭐Thread-2
              * 出现了连续的情况⭐️Thread-2
              * 出现了连续的情况⭐️Thread-4
              */
-
-            condition.signal();
-            System.out.println(Thread.currentThread().getName() + " 调用了唤醒 （get）【" + isHaveVlaue + "】");
-            //condition.signalAll();
+            System.out.println("打印 ★");
+            //condition.signal();
+            condition.signalAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
-            System.out.println(Thread.currentThread().getName() + " 释放了锁 ！（get）【" + isHaveVlaue + "】");
+            System.out.println(Thread.currentThread().getName() + " 释放了锁 ！（get）【" + isHaveVlaue + " -> " + i + " 】");
         }
     }
 

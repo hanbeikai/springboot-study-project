@@ -84,17 +84,17 @@ class MyServiceCondition04 {
         lock.lock();
         try {
             // ishavevlaue 为true 等待
-            if (isHaveVlaue) {
+            while (isHaveVlaue) {
                 condition.await();
             }
             // 为false ，设置为true
             isHaveVlaue = true;
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("⭐️⭐");
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+            System.out.println("★");
             // 唤醒 ishavevalue为 false时 休眠的线程
             condition.signal();
         } catch (InterruptedException e) {
@@ -109,16 +109,16 @@ class MyServiceCondition04 {
         lock.lock();
         try {
             // 为false时， 等待
-            if (!isHaveVlaue) {
+            while (!isHaveVlaue) {
                 condition.await();
             }
             // 为true时，谁知为false
             isHaveVlaue = false;
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             System.out.println("⭐️");
             // 唤醒 ishavevlaue为 true时 休眠的线程
             condition.signal();

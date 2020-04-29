@@ -1,6 +1,5 @@
 package com.beikai.springboottestdemo.test;
 
-import com.beikai.service.CommonService;
 import org.junit.Test;
 
 import java.util.*;
@@ -110,10 +109,10 @@ public class Test02 {
 
 
     }
-
-    @Test
-    public void test8(){
-        CommonService commonService = new CommonService();
-        commonService.doService();
-    }
+//
+//    @Test
+//    public void test8(){
+//        CommonService commonService = new CommonService();
+//        commonService.doService();
+//    }
 }
