@@ -22,27 +22,28 @@ import java.util.concurrent.locks.ReentrantLock;
  *  object 中的notifyall == condition 中的 signalAll 方法
  *
  */
-public class ConditionOfLockDemo02 {
+public class ConditionOfLockDemo03 {
 
     public static void main(String[] args) throws InterruptedException {
-        // 实现多个线程通知
-        MyServiceCondition02 myServiceCondition01 = new MyServiceCondition02();
-        Mythread05 mythread03 = new Mythread05(myServiceCondition01);
+        // 实现多个线程通知 通知指定的一个线程 需要多个 condition
+        MyServiceCondition03 myServiceCondition01 = new MyServiceCondition03();
+        Mythread07 mythread03 = new Mythread07(myServiceCondition01);
         mythread03.setName("a");
         mythread03.start();
-        Mythread06 mythread06 = new Mythread06(myServiceCondition01);
+        Mythread08 mythread06 = new Mythread08(myServiceCondition01);
         mythread06.setName("b");
         mythread06.start();
         Thread.sleep(1000);
-        myServiceCondition01.signalAll();
+        myServiceCondition01.signal2();
+
 
     }
 
 }
 
-class Mythread05 extends Thread{
-    private MyServiceCondition02 myServiceCondition01;
-    Mythread05(MyServiceCondition02 myServiceCondition01){
+class Mythread07 extends Thread{
+    private MyServiceCondition03 myServiceCondition01;
+    Mythread07(MyServiceCondition03 myServiceCondition01){
         super();
         this.myServiceCondition01 = myServiceCondition01;
     }
@@ -52,21 +53,22 @@ class Mythread05 extends Thread{
     }
 }
 
-class Mythread06 extends Thread{
-    private MyServiceCondition02 myServiceCondition01;
-    Mythread06(MyServiceCondition02 myServiceCondition01){
+class Mythread08 extends Thread{
+    private MyServiceCondition03 myServiceCondition01;
+    Mythread08(MyServiceCondition03 myServiceCondition01){
         super();
         this.myServiceCondition01 = myServiceCondition01;
     }
     @Override
     public void run() {
-        myServiceCondition01.awaitB();
+        myServiceCondition01.await2A();
     }
 }
 
-class MyServiceCondition02{
+class MyServiceCondition03{
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
+    private Condition condition2 = lock.newCondition();
 
     void awaitA(){
         lock.lock();
@@ -116,6 +118,32 @@ class MyServiceCondition02{
         }finally {
             lock.unlock();
             System.out.println("lock signal all is unlock ...");
+        }
+    }
+
+    void signal2(){
+        lock.lock();
+        try {
+            System.out.println("start signal 2 -> time is " + System.currentTimeMillis()  + " -> thread name is " + Thread.currentThread().getName());
+            condition2.signalAll();
+            System.out.println("end signal 2 -> time is " + System.currentTimeMillis()  + " -> thread name is " + Thread.currentThread().getName());
+        }finally {
+            lock.unlock();
+            System.out.println("lock signal 2 is unlock ...");
+        }
+    }
+
+    void await2A(){
+        lock.lock();
+        try {
+            System.out.println("start await 2a -> time is " + System.currentTimeMillis()  + " -> thread name is " + Thread.currentThread().getName());
+            condition2.await();
+            System.out.println("end await 2a -> time is " + System.currentTimeMillis()  + " -> thread name is " + Thread.currentThread().getName());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }finally {
+            lock.unlock();
+            System.out.println("lock await 2a is unlock ...");
         }
     }
 
