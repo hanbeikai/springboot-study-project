@@ -35,11 +35,11 @@ public class ConditionOfLockDemo05 {
         System.out.println("-------------------开始-----------------------");
         for (int i = 0; i < 10; i++) {
             mythread011s[i] = new Mythread011(myServiceCondition01);
-            mythread011s[i].setName("set : " + i);
+            mythread011s[i].setName("  set : " + i);
             mythread011s[i].start();
 
             mythread012s[i] = new Mythread012(myServiceCondition01);
-            mythread012s[i].setName("get : " + i);
+            mythread012s[i].setName("  get : " + i);
             mythread012s[i].start();
         }
 
