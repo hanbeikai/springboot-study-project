@@ -1,4 +1,4 @@
-package com.beikai.springboottestdemo.Thread.AboutBook;
+package com.beikai.springboottestdemo.Thread.AboutBook.chapter1_1;
 
 /**
  * @ClassName Test19
