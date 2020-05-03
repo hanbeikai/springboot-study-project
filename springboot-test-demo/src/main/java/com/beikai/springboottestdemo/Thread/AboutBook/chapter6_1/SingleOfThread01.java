@@ -37,13 +37,14 @@ class MyThread extends Thread{
     }
 }
 
+
+// 立即加载 饿汉模式
 class SingleDemo{
     private static  SingleDemo singleDemo = new SingleDemo();
 
     public SingleDemo() {
 
     }
-
     public static SingleDemo getInstance(){
         // 此代码版本为立即加载
         // 这个版本的代码的缺点是不能有其他实例变量

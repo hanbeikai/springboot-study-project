@@ -50,8 +50,6 @@ class Mythread03 extends Thread{
     }
 }
 
-
-
 class MyServiceCondition01{
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
