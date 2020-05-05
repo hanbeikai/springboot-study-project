@@ -17,6 +17,7 @@ import lombok.SneakyThrows;
  */
 public class ThreadGroupDemo01 {
     public static void main(String[] args) {
+
         MyThread2 mythread2 = new MyThread2();
         MyThread3 myThread3 = new MyThread3();
 

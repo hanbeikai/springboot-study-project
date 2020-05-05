@@ -34,6 +34,8 @@ public class ThreadGroupDemo02 {
             }
         };
 
+
+
         // 线程加入线程组
         Thread newThread = new Thread(group,runnable);
         newThread.setName("线程a");   // 线程必须启动才能加到线程组a中
