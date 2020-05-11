@@ -5,7 +5,7 @@ package com.beikai.springboottestdemo.Thread.AboutBook.chapter2_1;
  * User: hanbeikai
  * Date: 2020/5/8
  * Time: 11:20 下午
- * Description: 解决同步循环
+ * Description: 解决异步循环
  *
  *   Volatile关键字的作用是  :  使变量在多个线程间可见
  *
