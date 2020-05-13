@@ -60,10 +60,10 @@ public class ScheduleAtFixedRateOfTimer5 {
         //testTaskDelay(5000L);
 
         // 测试 scheduleAtFixedRate 方法不延时
-        // testScheduleAtFixedRateNoDelay(1000);
+        testScheduleAtFixedRateNoDelay(1000);
 
         // 测试 scheduleAtFixedRate 方法延时
-        testScheduleAtFixedRateDelay(5000);
+        //testScheduleAtFixedRateDelay(5000);
 
     }
 
