@@ -42,7 +42,7 @@ class MyThread extends Thread{
 class SingleDemo{
     private static  SingleDemo singleDemo = new SingleDemo();
 
-    public SingleDemo() {
+    SingleDemo() {
 
     }
     public static SingleDemo getInstance(){
@@ -54,3 +54,4 @@ class SingleDemo{
         return singleDemo;
     }
 }
+

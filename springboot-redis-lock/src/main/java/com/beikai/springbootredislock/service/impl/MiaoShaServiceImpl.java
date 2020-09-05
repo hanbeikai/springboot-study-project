@@ -2,6 +2,7 @@ package com.beikai.springbootredislock.service.impl;
 
 import com.beikai.springbootredislock.mapper.MiaoShaMapper;
 import com.beikai.springbootredislock.service.MiaoShaService;
+import com.beikai.springbootredislock.util.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -29,8 +30,8 @@ public class MiaoShaServiceImpl implements MiaoShaService {
     private StringRedisTemplate stringRedisTemplate;
 
 
-   /* @Autowired
-    private RedisUtil redisUtil;*/
+    @Autowired
+    private RedisUtil redisUtil;
 
 
 
@@ -70,7 +71,7 @@ public class MiaoShaServiceImpl implements MiaoShaService {
 
                 // 存进缓存中
                 stringRedisTemplate.opsForValue().set(goodsCode,count+"");
-                //redisUtil.set(goodsCode,count);
+                redisUtil.set(goodsCode,count);
 
             }
 

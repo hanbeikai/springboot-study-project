@@ -146,7 +146,7 @@ class SingleDemo6 {
 // 单例模式7 ， 使用静态内置类实现单例模式   内置静态类可以达到线程安全问题，但是遇到序列化对象，仍然会出现多例
 class SingleDemo7 {
     private static class MySingleDemo {
-        private static SingleDemo7 singleDemo7 = new SingleDemo7();
+        private  static SingleDemo7 singleDemo7 = new SingleDemo7();
     }
     public SingleDemo7() {
     }
@@ -154,6 +154,7 @@ class SingleDemo7 {
         return MySingleDemo.singleDemo7;
     }
 }
+
 
 // 单利模式8  序列化和反序列化实现单利模式
 class SingleDemo8 implements Serializable {
