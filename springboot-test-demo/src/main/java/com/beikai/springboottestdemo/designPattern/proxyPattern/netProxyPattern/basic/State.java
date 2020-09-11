@@ -1,4 +1,4 @@
-package com.beikai.springboottestdemo.designPattern.proxyPattern.basic;
+package com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.basic;
 
 import java.io.Serializable;
 import java.rmi.RemoteException;

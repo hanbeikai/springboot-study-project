@@ -1,6 +1,6 @@
-package com.beikai.springboottestdemo.designPattern.proxyPattern.stub;
+package com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.stub;
 
-import com.beikai.springboottestdemo.designPattern.proxyPattern.basic.State;
+import com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.basic.State;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -1,4 +1,4 @@
-package com.beikai.springboottestdemo.designPattern.proxyPattern.after;
+package com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.after;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -27,6 +27,7 @@ public class MyRemoteClient {
             }
 
             // 获取指定服务名的对象
+            // 注意 : 客户代理对象与服务代理对象的包路径要完全相同,否则会报错
             MyRemote myRemote = (MyRemote) registry.lookup("myRemote");
             String say = myRemote.say();
             System.out.println(say);

@@ -1,7 +1,7 @@
-package com.beikai.springboottestdemo.designPattern.proxyPattern;
+package com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern;
 
-import com.beikai.springboottestdemo.designPattern.proxyPattern.skeleton.GameMachineRemoteImpl;
-import com.beikai.springboottestdemo.designPattern.proxyPattern.stub.GameMachineRemote;
+import com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.skeleton.GameMachineRemoteImpl;
+import com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.stub.GameMachineRemote;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

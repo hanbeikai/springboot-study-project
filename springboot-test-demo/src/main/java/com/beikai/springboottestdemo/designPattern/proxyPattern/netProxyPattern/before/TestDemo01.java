@@ -1,6 +1,6 @@
-package com.beikai.springboottestdemo.designPattern.proxyPattern.before;
+package com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.before;
 
-import com.beikai.springboottestdemo.designPattern.proxyPattern.before.monitor.GameMonitor;
+import com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.before.monitor.GameMonitor;
 
 /**
  * Created with IntelliJ IDEA.

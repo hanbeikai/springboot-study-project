@@ -1,4 +1,4 @@
-package com.beikai.springboottestdemo.designPattern.proxyPattern.before;
+package com.beikai.springboottestdemo.designPattern.proxyPattern.netProxyPattern.before;
 
 import lombok.Data;
 
