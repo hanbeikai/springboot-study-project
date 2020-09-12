@@ -48,4 +48,8 @@ public class OwnInvocationHandle implements InvocationHandler {
         }
         throw new IllegalAccessException("非法操作!");
     }
+
+    public static void main(String[] args) {
+        System.out.println(System.currentTimeMillis());
+    }
 }
