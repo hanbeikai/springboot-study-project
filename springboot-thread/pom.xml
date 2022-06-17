@@ -62,7 +62,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.51</version>
+            <version>1.2.83</version>
         </dependency>
         <!--添加 雪花算法 依赖-->
         <dependency>
@@ -96,7 +96,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.51</version>
+            <version>1.2.83</version>
         </dependency>
         <!--添加servlet 依赖-->
         <dependency>
